@@ -1,0 +1,2360 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<COMMAND><TEMPLATE><RSV_NAME>C_COM</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>C_COM(&lt;communication line number&gt;) = &quot;ETH:&lt;server side IP address&gt;&quot;</FORMAT>
+<FORMAT>C_COM(&lt;communication line number&gt;) = &quot;ETH:&lt;server side IP address&gt;, &lt;port number&gt;&quot;</FORMAT>
+<SAMPLE>C_COM = &quot;ETH:192.168.0.10&quot;</SAMPLE>
+<SAMPLE>C_COM = &quot;ETH:192.168.0.10,10010&quot;</SAMPLE>
+<COMMENT>Sets the parameters for the line to be opened by the OPEN instruction.</COMMENT>
+<COMMENT>This is used when the communication destination is changed frequently.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_DATE</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_DATE</FORMAT>
+<SAMPLE>C1$=C_DATE</SAMPLE>
+<COMMENT>This variable returns the current date in the format of year/month/date.</COMMENT>
+<COMMENT>For instance, C1$ becomes &quot;2007/04/01&quot;.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_MAKER</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_MAKER</FORMAT>
+<SAMPLE>C1$=C_MAKER</SAMPLE>
+<COMMENT>This variable returns information on the manufacturer of the robot controller.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_MECHA</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_MECHA</FORMAT>
+<FORMAT>&lt;Character String Variable&gt; = C_MECHA(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>C1$=C_MECHA</SAMPLE>
+<SAMPLE>C1$=C_MECHA(1)</SAMPLE>
+<COMMENT>This variable returns the name of the mechanism to be used.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NVS1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_NVS1(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NVS1(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in text string data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NVS2</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_NVS2(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NVS2(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in text string data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NVS3</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_NVS3(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NVS3(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in text string data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NVS4</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_NVS4(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NVS4(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in text string data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NVS5</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_NVS5(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NVS5(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in text string data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NVS6</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_NVS6(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NVS6(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in text string data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NVS7</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_NVS7(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NVS7(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in text string data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_NVS8</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_NVS8(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>C1$ = C_NVS8(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in text string data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_PRG</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_PRG</FORMAT>
+<FORMAT>&lt;Character String Variable&gt; = C_PRG(&lt;Numeric&gt;)</FORMAT>
+<SAMPLE>C1$=C_PRG</SAMPLE>
+<SAMPLE>C1$=C_PRG(1)</SAMPLE>
+<COMMENT>This variable returns the selected program number (name).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_TIME</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_TIME</FORMAT>
+<SAMPLE>C1$=C_TIME</SAMPLE>
+<COMMENT>This variable returns the current time in the format of time:minute:second (24 hours notation).</COMMENT>
+<COMMENT>For instance, C1$ becomes &quot;13/01/30&quot;.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>C_USER</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = C_USER</FORMAT>
+<SAMPLE>C1$=C_USER</SAMPLE>
+<COMMENT>This variable returns the data registered in the &quot;USERMSG&quot; parameter.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>J_CURR</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Joint Type Variable&gt; = J_CURR</FORMAT>
+<FORMAT>&lt;Joint Type Variable&gt; = J_CURR(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>J1=J_CURR</SAMPLE>
+<SAMPLE>J1=J_CURR(1)</SAMPLE>
+<COMMENT>Returns the joint type data at the current position.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>J_COLMXL</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Joint Type Variable&gt; = J_COLMXL</FORMAT>
+<FORMAT>&lt;Joint Type Variable&gt; = J_COLMXL(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>M1=J_COLMXL.J1+10</SAMPLE>
+<SAMPLE>M1=J_COLMXL(1).J1+10</SAMPLE>
+<COMMENT>Return the maximum value of the differences between the estimated torque and actual torque</COMMENT>
+<COMMENT>while the impact detection function is being enabled.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>J_ECURR</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Joint Type Variable&gt; = J_ECURR</FORMAT>
+<FORMAT>&lt;Joint Type Variable&gt; = J_ECURR(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>JA=J_ECURR</SAMPLE>
+<SAMPLE>JA=J_ECURR(1)</SAMPLE>
+<COMMENT>Returns the current encoder pulse value.(Unit: pulse)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>J_FBC</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Joint Type Variable&gt; = J_FBC</FORMAT>
+<FORMAT>&lt;Joint Type Variable&gt; = J_FBC(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>J1=J_FBC</SAMPLE>
+<SAMPLE>J1=J_FBC(1)</SAMPLE>
+<COMMENT>Returns the current position of the joint type that has been generated by encoder feedback.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>J_AMPFBC</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Joint Type Variable&gt; = J_AMPFBC(&lt;Mechanism Number&gt;)</FORMAT>
+<FORMAT>&lt;Joint Type Variable&gt; = J_AMPFBC(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>J2=J_AMPFBC</SAMPLE>
+<SAMPLE>J2=J_AMPFBC(1)</SAMPLE>
+<COMMENT>Returns the current feedback value of each axis.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>J_ORIGIN</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Joint Type Variable&gt; = J_ORIGIN</FORMAT>
+<FORMAT>&lt;Joint Type Variable&gt; = J_ORIGIN(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>J1=J_ORIGIN</SAMPLE>
+<SAMPLE>J1=J_ORIGIN(1)</SAMPLE>
+<COMMENT>Returns the joint data when the origin has been set.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ACL</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_ACL</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_ACL(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_ACL</SAMPLE>
+<SAMPLE>M1_M_ACL(1)</SAMPLE>
+<COMMENT>Returns the ratio of current acceleration time. (%)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_DACL</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_DACL</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_DACL(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_DACL</SAMPLE>
+<SAMPLE>M1=M_DACL(1)</SAMPLE>
+<COMMENT>Returns the ratio of current deceleration time. (%)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NACL</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NACL</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_NACL(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_NACL</SAMPLE>
+<SAMPLE>M1=M_NACL(1)</SAMPLE>
+<COMMENT>Returns the initial acceleration time value. (100%)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NDACL</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NDACL</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_NDACL(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_NDACL</SAMPLE>
+<SAMPLE>M1=M_NDACL(4)</SAMPLE>
+<COMMENT>Returns the initial deceleration time value. (100%)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ACLSTS</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_ACLSTS</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_ACLSTS(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_ACLSTS</SAMPLE>
+<SAMPLE>M1=M_ACLSTS(5)</SAMPLE>
+<COMMENT>Returns the current acceleration/deceleration status. </COMMENT>
+<COMMENT>(Current status: 0 = Stopped, 1 = Accelerating, 2 = Constant speed, 3 = Decelerating)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_BRKCQ</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_BRKCQ</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_BRKCQ(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>IF M_BRKCQ=1 THEN HLT</SAMPLE>
+<SAMPLE>IF M_BRKCQ(1)=1 THEN HLT</SAMPLE>
+<COMMENT>Returns the result of executing a line containing a BREAK command that was executed last.</COMMENT>
+<COMMENT>(Return value: 1:Break was executed, 0:Break was not executed)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_BTIME</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_BTIME</FORMAT>
+<SAMPLE>M1=M_BTIME</SAMPLE>
+<COMMENT>Returns the remaining hour of battery left. (Unit: hour)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_CMPDST</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_CMPDST</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_CMPDST(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>M1=M_CMPDST</SAMPLE>
+<SAMPLE>M1=M_CMPDST(1)</SAMPLE>
+<COMMENT>Returns the amount of difference (in mm) between the command value and the actual value from the robot when executing the compliance function.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_CMPLMT</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>DEF ACT 1, M_CMPLMT = 1 GOTO *LMT</FORMAT>
+<FORMAT>DEF ACT 1, M_CMPLMT(&lt;Mechanism Number&gt;) = 1 GOTO *LMT</FORMAT>
+<SAMPLE>DEF ACT 1, M_CMPLMT = 1 GOTO *LMT</SAMPLE>
+<SAMPLE>DEF ACT 1, M_CMPLMT(1) = 1 GOTO *LMT</SAMPLE>
+<COMMENT>Returns whether or not the command value when the compliance function is being executed is about to exceed various limits.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_COLSTS</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>DEF ACT 1, M_COLSTS = 1 GOTO *LCOL,S</FORMAT>
+<FORMAT>DEF ACT 1, M_COLSTS(&lt;Mechanism Number&gt;) = 1 GOTO *LCOL,S</FORMAT>
+<SAMPLE>DEF ACT 1, M_COLSTS = 1 GOTO *HOME, S</SAMPLE>
+<SAMPLE>DEF ACT 1, M_COLSTS(1) = 1 GOTO *HOME, S</SAMPLE>
+<COMMENT>Return the impact detection status.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_CSTP</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_CSTP</FORMAT>
+<SAMPLE>M1=M_CSTP</SAMPLE>
+<COMMENT>Returns the status of whether or not a program is on cycle stop.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_CYS</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numerical variable&gt; = M_CYS</FORMAT>
+<SAMPLE>M1=M_CYS</SAMPLE>
+<COMMENT>Returns the status of whether or not a program is on cycle operation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_DIN</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_DIN(&lt;Input register number&gt;)</FORMAT>
+<SAMPLE>M1=M_DIN(6000)</SAMPLE>
+<SAMPLE>IF M_DIn(6000)=100 THEN </SAMPLE>
+<SAMPLE>ENDIF</SAMPLE>
+<COMMENT>References the input register of CC-Link (optional).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_DOUT</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_DOUT(&lt;Output register number&gt;) = &lt;Numeric Variable&gt;</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_DOUT(&lt;Output register number&gt;)</FORMAT>
+<SAMPLE>M_DOut(6000)=100</SAMPLE>
+<SAMPLE>If M_DOut(6000)=100 Then</SAMPLE>
+<SAMPLE>EndIf</SAMPLE>
+<COMMENT>Write or reference the output register of CC-Link (optional).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ENC</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_ENC</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_ENC(&lt;Encoder number&gt;)</FORMAT>
+<SAMPLE>M1 = M_ENC</SAMPLE>
+<SAMPLE>M1 = M_ENC(1)</SAMPLE>
+<COMMENT>Write or reference the external encoder value of the specified encoder number.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ENCMAX</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_ENCMAX</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_ENCMAX(&lt;Encoder number&gt;)</FORMAT>
+<SAMPLE>M1 = M_ENCMAX</SAMPLE>
+<SAMPLE>M1 = M_ENCMAX(1)</SAMPLE>
+<COMMENT>Returns the external encoder maximum value of the specified encoder number.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ENCMIN</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_ENCMIN</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_ENCMIN(&lt;Encoder number&gt;)</FORMAT>
+<SAMPLE>M1 = M_ENCMIN</SAMPLE>
+<SAMPLE>M1 = M_ENCMIN(1)</SAMPLE>
+<COMMENT>Returns the external encoder minimum value of the specified encoder number.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ENCSPD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_ENCSPD</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_ENCSPD(&lt;Encoder number&gt;)</FORMAT>
+<SAMPLE>M1 = M_ENCSPD</SAMPLE>
+<SAMPLE>M1 = M_ENCSPD(1)</SAMPLE>
+<COMMENT>Returns the external encoder speed of the specified encoder number.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ERR</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_ERR</FORMAT>
+<SAMPLE>IF M_ERR=0 THEN 10</SAMPLE>
+<COMMENT>Returns whether an error has been generated.</COMMENT>
+<COMMENT>(1: Error has been generated, 0: No error)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ERRLVL</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_ERRLVL</FORMAT>
+<SAMPLE>M1=M_ERRLVL</SAMPLE>
+<SAMPLE>IF M_ERRLVL=0 THEN 10</SAMPLE>
+<COMMENT>(Caution/Low/High1/High2 = 1/2/3/4)</COMMENT>
+<COMMENT></COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ERRNO</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_ERRNO</FORMAT>
+<SAMPLE>M1=M_ERRNO</SAMPLE>
+<SAMPLE>IF M_ERRNO=0 THEN 10</SAMPLE>
+<COMMENT>Returns the error number of the generated error.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_EXP</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_EXP</FORMAT>
+<SAMPLE>M1=M_EXP</SAMPLE>
+<COMMENT>Returns the base of natural logarithm (2.718281828459045).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_FBD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_FBD</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_FBD(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>DEF ACT 1, M_FBD &gt; 10 GOTO *SUB1, S</SAMPLE>
+<SAMPLE>DEF ACT 1, M_FBD(1) &gt; 10 GOTO *SUB1, S</SAMPLE>
+<COMMENT>Returns the difference between the command position and the feedback position.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_G</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_G</FORMAT>
+<SAMPLE>M1 = M_G</SAMPLE>
+<COMMENT>Returns gravitational constant (9.80665).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_HNDCQ</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_HNDCQ(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=M_HNDCQ(1)</SAMPLE>
+<COMMENT>Returns the hand check input signal value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_IN</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_IN(&lt;Input signal number&gt;)</FORMAT>
+<SAMPLE>M1=M_IN(0)</SAMPLE>
+<SAMPLE>IF M_IN(0)=M_ON THEN *LABEL</SAMPLE>
+<COMMENT>The value of the input signal is returned by the bit signal expression.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_INB</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_INB(&lt;Input signal number&gt;)</FORMAT>
+<SAMPLE>M1=M_INB(3) AND &amp;H7</SAMPLE>
+<COMMENT>The value of the input signal is returned by byte unit (8 bits) expression.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_INW</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_INW(&lt;Input signal number&gt;)</FORMAT>
+<SAMPLE>M1=M_INW(5) AND &amp;H3FF</SAMPLE>
+<COMMENT>The value of the input signal is returned by word unit (16 bits) expression.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_JOVRD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_JOVRD</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_JOVRD(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_JOVRD</SAMPLE>
+<SAMPLE>M1=M_JOVRD(1)</SAMPLE>
+<COMMENT>Returns value specified by the override JOvrd instruction for joint interpolation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NJOVRD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NJOVRD</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_NJOVRD(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_NJOVRD</SAMPLE>
+<SAMPLE>M1=M_NJOVRD(1)</SAMPLE>
+<COMMENT>Returns initial override value (100%) for joint interpolation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_OPOVRD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_OPOVRD</FORMAT>
+<SAMPLE>M1=M_OPOVRD</SAMPLE>
+<COMMENT>Returns override value of the operation panel.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_OVRD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_OVRD</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_OVRD(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_OVRD</SAMPLE>
+<SAMPLE>M1=M_OVRD(1)</SAMPLE>
+<COMMENT>Returns current override value, value specified by the Ovrd instruction.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NOVRD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NOVRD</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_NOVRD(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_NOVRD</SAMPLE>
+<SAMPLE>M1=M_NOVRD(1)</SAMPLE>
+<COMMENT>Returns initial override value (100%).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_LDFACT</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_LDFACT(&lt;Axis Number&gt;)</FORMAT>
+<SAMPLE>IF M_LDFACT(2)&gt;90 THEN</SAMPLE>
+<COMMENT>The load ratio for each joint axis can be referenced.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_LINE</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_LINE</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_LINE(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_LINE</SAMPLE>
+<SAMPLE>M1=M_LINE(2)</SAMPLE>
+<COMMENT>Returns the line number that is being executed.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_MODE</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_MODE</FORMAT>
+<SAMPLE>M1=M_MODE</SAMPLE>
+<COMMENT>Returns the key switch mode of the operation panel.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NVNUM</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NVNUM</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_NVNUM(&lt;Vision sensor number&gt;)</FORMAT>
+<SAMPLE>M1 = M_NVNUM</SAMPLE>
+<SAMPLE>M1 = M_NVNUM(1)</SAMPLE>
+<COMMENT>Indicates the number of pieces of work detected by the vision sensor.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NVOPEN</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NVOPEN</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_NVOPEN(&lt;Vision sensor number&gt;)</FORMAT>
+<SAMPLE>M1 = M_NVOPEN</SAMPLE>
+<SAMPLE>M1 = M_NVOPEN(1)</SAMPLE>
+<COMMENT>Indicates the vision sensor line connection status.</COMMENT>
+<COMMENT>0: Line connecting (logon not complete)</COMMENT>
+<COMMENT>1: Logon complete</COMMENT>
+<COMMENT>-1: Not connected</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NVS1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NVS1(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>M1 = M_NVS1(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in numeric data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NVS2</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NVS2(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>M1 = M_NVS2(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in numeric data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NVS3</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NVS3(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>M1 = M_NVS3(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in numeric data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NVS4</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NVS4(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>M1 = M_NVS4(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in numeric data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NVS5</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NVS5(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>M1 = M_NVS5(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in numeric data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NVS6</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NVS6(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>M1 = M_NVS6(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in numeric data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NVS7</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NVS7(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>M1 = M_NVS7(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in numeric data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NVS8</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NVS8(&lt;Line number&gt;,&lt;Column number&gt;)</FORMAT>
+<SAMPLE>M1 = M_NVS8(1,1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in numeric data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_ON</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_ON</FORMAT>
+<SAMPLE>M1=M_ON</SAMPLE>
+<COMMENT>Always returns 1 (M_ON).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_OFF</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_OFF</FORMAT>
+<SAMPLE>M2=M_OFF</SAMPLE>
+<COMMENT>Always returns 0 (M_OFF).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_OPEN</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>Numerical variable&gt; = M_OPEN</FORMAT>
+<FORMAT>Numerical variable&gt; = M_OPEN&lt;File number&gt;</FORMAT>
+<SAMPLE>IF M_OPEN&lt;&gt;1 THEN GOTO *SUB1</SAMPLE>
+<SAMPLE>IF M_OPEN(1)&lt;&gt;1 THEN GOTO *SUB1</SAMPLE>
+<COMMENT>RetReturns the status indicating whether or not a file is opened.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_OUT</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_OUT(&lt;Output signal number&gt;) = &lt;Numeric Variable&gt;</FORMAT>
+<FORMAT>M_OUTW(&lt;Output signal number&gt;) = &lt;Numeric Variable&gt; DLY &lt;Time&gt;</FORMAT>
+<SAMPLE>M_OUT(2)=1</SAMPLE>
+<SAMPLE>M_OUT(2)=1 DLY 5</SAMPLE>
+<COMMENT>Writes or references external output signal.</COMMENT>
+<COMMENT>M_OUT : Output signal bit.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_OUTB</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_OUTB(&lt;Output signal number&gt;) = &lt;Numeric Variable&gt;</FORMAT>
+<FORMAT>M_OUTB(&lt;Output signal number&gt;) = &lt;Numeric Variable&gt; DLY &lt;Time&gt;</FORMAT>
+<SAMPLE>M_OUTB(2)=&amp;HFF</SAMPLE>
+<SAMPLE>M_OUTB(2)=&amp;HFF DLY 5</SAMPLE>
+<COMMENT>Writes or references external output signal.</COMMENT>
+<COMMENT>M_OUTB : Output signal byte (8 bits).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_OUTW</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_OUTW(&lt;Output signal number&gt;) = &lt;Numeric Variable&gt;</FORMAT>
+<FORMAT>M_OUTW(&lt;Output signal number&gt;) = &lt;Numeric Variable&gt; DLY &lt;Time&gt;</FORMAT>
+<SAMPLE>M_OUTW(2)=&amp;HFFFF</SAMPLE>
+<SAMPLE>M_OUTW(2)=&amp;HFFFF DLY 5</SAMPLE>
+<COMMENT>Writes or references external output signal.</COMMENT>
+<COMMENT>M_OUTW : Output signal word (16 bits).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_PBNUM</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_PBNUM</FORMAT>
+<SAMPLE>M1=M_PBNUM</SAMPLE>
+<COMMENT>The number of the station currently in operation</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_PBFNUM</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_PBFNUM</FORMAT>
+<SAMPLE>M1=M_PBFNUM</SAMPLE>
+<COMMENT>The station number which saved in the flash ROM</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_PI</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_PI</FORMAT>
+<SAMPLE>M1=M_PI</SAMPLE>
+<COMMENT>Returns pi (3.14159265358979).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_PSA</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_PSA</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_PSA(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_PSA</SAMPLE>
+<SAMPLE>M1=M_PSA(2)</SAMPLE>
+<COMMENT>Returns whether the program is selectable by the specified task slot.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_RATIO</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_RATIO</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_RATIO(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>MOV P1 WTHIF M_RATIO&gt;80, M_OUT(1)=1</SAMPLE>
+<SAMPLE>MOV P1 WTHIF M_RATIO(2)&gt;80, M_OUT(1)=1</SAMPLE>
+<COMMENT>Returns how much the robot has approached the target position (0 to 100%) while the robot is moving.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_RDST</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_RDST</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_RDST(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>MOV P1 WTHIF M_RDST&lt;10, M_OUT(10)=1</SAMPLE>
+<SAMPLE>MOV P1 WTHIF M_RDST(2)&lt;10, M_OUT(10)=1</SAMPLE>
+<COMMENT>Returns the remaining distance to the target position (in mm) while the robot is moving.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_RUN</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_RUN</FORMAT>
+<FORMAT>Numeric Variable&gt; = M_RUN(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_RUN</SAMPLE>
+<SAMPLE>M1=M_RUN(2)</SAMPLE>
+<COMMENT>Returns whether the program for the specified task slot is being executed.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_SETADL</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>M_SETADL(&lt;Axis Number&gt;) = &lt;Numeric Variable&gt;</FORMAT>
+<SAMPLE>M_SETADL(2)=70</SAMPLE>
+<COMMENT>Set the acceleration/deceleration time distribution rate of the specified axis when optimum acceleration/deceleration control is enabled (Oadl On).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_SKIPCQ</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_SKIPCQ</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_SKIPCQ(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>IF M_SKIPCQ=1 THEN GOTO 1000</SAMPLE>
+<SAMPLE>IF M_SKIPCQ(2)=1 THEN GOTO 1000</SAMPLE>
+<COMMENT>Returns the result of executing the line containing the last executed SKIP command.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_SPD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_SPD</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_SPD(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_SPD</SAMPLE>
+<SAMPLE>M1=M_SPD(2)</SAMPLE>
+<COMMENT>Returns the currently set speed during XYZ and JOINT interpolation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_NSPD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_NSPD</FORMAT>
+<SAMPLE>M1=M_NSPD</SAMPLE>
+<COMMENT>Returns the initial value at the speed during XYZ and JOINT interpolation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_RSPD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_RSPD</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_RSPD(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_RSPD</SAMPLE>
+<SAMPLE>M1=M_RSPD(2)</SAMPLE>
+<COMMENT>Returns the directive speed information during XYZ and JOINT interpolation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_SVO</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_SVO(&lt;Mechanism Number&gt;)</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_SVO(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>M1=M_SVO</SAMPLE>
+<SAMPLE>M1=M_SVO(1)</SAMPLE>
+<COMMENT>Returns the current status of the servo power supply.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TIMER</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_TIMER(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=M_TIMER(1)</SAMPLE>
+<COMMENT>Time is measured in milliseconds.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TOOL</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_TOOL</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_TOOL(&lt;Mechanism Number&gt;)</FORMAT>
+<FORMAT>M_TOOL = (&lt;Equation&gt;)</FORMAT>
+<FORMAT>M_TOOL(&lt;Mechanism Number&gt;) = (&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=M_TOOL</SAMPLE>
+<SAMPLE>M1=M_TOOL(1)</SAMPLE>
+<SAMPLE>M_TOOL=2</SAMPLE>
+<SAMPLE>M_TOOL(1)=2</SAMPLE>
+<COMMENT>In addition to using the tool data (MEXTL1 to 4) of the specified number as the current tool data, it is also set in the MEXTL parameter.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TRBFCT</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_TRBFCT</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_TRBFCT(&lt;Buffer Number&gt;)</FORMAT>
+<SAMPLE>IF M_TRBFCT&gt;0 THEN GOTO *TRACK</SAMPLE>
+<SAMPLE>IF M_TRBFCT(1)&gt;0 THEN GOTO *TRACK</SAMPLE>
+<COMMENT>Return the number of data stored in the specified tracking buffer.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_TRKCQ</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_TRKCQ</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_TRKCQ(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>M1 = M_TRKCQ</SAMPLE>
+<SAMPLE>M1 = M_TRKCQ(1)</SAMPLE>
+<COMMENT>Return the tracking operation of the specified mechanism.</COMMENT>
+<COMMENT>1: Tracking</COMMENT>
+<COMMENT>0: Not tracking</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_UAR</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_UAR</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_UAR(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>M1=M_UAR</SAMPLE>
+<SAMPLE>M1=M_UAR(1)</SAMPLE>
+<COMMENT>Returns whether the robot is in the user-defined area.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_WAI</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_WAI(&lt;Slot number&gt;)</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_WAI(&lt;Slot number&gt;)</FORMAT>
+<SAMPLE>M1=M_WAI</SAMPLE>
+<SAMPLE>M1=M_WAI(1)</SAMPLE>
+<COMMENT>Returns the standby status of the program for the specified task slot.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_WUPOV</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_WUPOV</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_WUPOV(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>M1=M_WUPOV</SAMPLE>
+<SAMPLE>M1=M_WUPOV(1)</SAMPLE>
+<COMMENT>Returns the value of an override (warm-up operation override, unit: %) to be applied to the command speed in order to reduce the operation speed when in the warm-up operation status.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_WUPRT</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_WUPRT</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_WUPRT(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>M1=M_WUPRT</SAMPLE>
+<SAMPLE>M1=M_WUPRT(1)</SAMPLE>
+<COMMENT>Returns the time (sec) during which a target axis must operate to cancel the warm-up operation status.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>M_WUPST</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = M_WUPST</FORMAT>
+<FORMAT>&lt;Numeric Variable&gt; = M_WUPST(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>M1=M_WUPST</SAMPLE>
+<SAMPLE>M1=M_WUPST(1)</SAMPLE>
+<COMMENT>Returns the time (sec) until the warm-up operation status is set again after it has been canceled.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_BASE</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_BASE</FORMAT>
+<FORMAT>&lt;Position Variables&gt; = P_BASE(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>P1=P_BASE</SAMPLE>
+<SAMPLE>P1=P_BASE(1)</SAMPLE>
+<COMMENT>Returns information related to the base conversion data.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NBASE</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_NBASE</FORMAT>
+<SAMPLE>BASE P_NBASE</SAMPLE>
+<COMMENT>Returns information related to the base conversion data.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_COLDIR</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_COLDIR</FORMAT>
+<FORMAT>&lt;Position Variables&gt; = P_COLDIR(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>PESC=P_COLDIR*(-2)</SAMPLE>
+<SAMPLE>PESC=P_COLDIR(1)*(-2)</SAMPLE>
+<COMMENT>Return the operation direction of the robot when an impact is detected.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_CURR</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_CURR</FORMAT>
+<FORMAT>&lt;Position Variables&gt; = P_CURR(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>P100=P_CURR</SAMPLE>
+<SAMPLE>P100=P_CURR(1)</SAMPLE>
+<COMMENT>Returns the current position (X, Y, Z, A, B, C,L1,L2) (FL1, FL2).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_CVSPD</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_CVSPD</FORMAT>
+<FORMAT>&lt;Position Variables&gt; = P_CVSPD(&lt;Encoder Number&gt;)</FORMAT>
+<SAMPLE>M1=P_CVSPD.Y</SAMPLE>
+<SAMPLE>M1=P_CVSPD(1).Y</SAMPLE>
+<COMMENT>Return the speed of the conveyer of the specified encoder number.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_ENCDLT</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_ENCDLT</FORMAT>
+<FORMAT>&lt;Position Variables&gt; = P_ENCDLT(&lt;Encoder Number&gt;)</FORMAT>
+<SAMPLE>M1=P_ENCDLT.Y * MENCSUB</SAMPLE>
+<SAMPLE>M1=P_ENCDLT(1).Y * MENCSUB</SAMPLE>
+<COMMENT>Set the amount of the movement of the robot&apos;s hand per an encoder pulse.</COMMENT>
+<COMMENT>Return the amount of the movement of the robot&apos;s hand per an encoder pulse.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_FBC</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_FBC</FORMAT>
+<FORMAT>&lt;Position Variables&gt; = P_FBC(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>P1=P_FBC</SAMPLE>
+<SAMPLE>P1=P_FBC(1)</SAMPLE>
+<COMMENT>Returns the current position (X, Y, Z, A, B, C, L1, L2)(FL1, FL2) based on the feedback values from the servo.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NVS1</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_NVS1(&lt;Line number&gt;)</FORMAT>
+<SAMPLE>P1 = P_NVS1(1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in position data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NVS2</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_NVS2(&lt;Line number&gt;)</FORMAT>
+<SAMPLE>P1 = P_NVS2(1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in position data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NVS3</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_NVS3(&lt;Line number&gt;)</FORMAT>
+<SAMPLE>P1 = P_NVS3(1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in position data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NVS4</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_NVS4(&lt;Line number&gt;)</FORMAT>
+<SAMPLE>P1 = P_NVS4(1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in position data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NVS5</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_NVS5(&lt;Line number&gt;)</FORMAT>
+<SAMPLE>P1 = P_NVS5(1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in position data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NVS6</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_NVS6(&lt;Line number&gt;)</FORMAT>
+<SAMPLE>P1 = P_NVS6(1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in position data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NVS7</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_NVS7(&lt;Line number&gt;)</FORMAT>
+<SAMPLE>P1 = P_NVS7(1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in position data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NVS8</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_NVS8(&lt;Line number&gt;)</FORMAT>
+<SAMPLE>P1 = P_NVS8(1)</SAMPLE>
+<COMMENT>Stores the data recognized by the vision sensor in position data format.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_SAFE</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>Position Variables&gt;= P_SAFE</FORMAT>
+<FORMAT>Position Variables&gt;= P_SAFE(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>P1=P_SAFE</SAMPLE>
+<SAMPLE>P1=P_SAFE(1)</SAMPLE>
+<COMMENT>Returns the safe point (XYZ position of the JSAFE parameter).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_TOOL</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt;=P_TOOL</FORMAT>
+<FORMAT>&lt;Position Variables&gt;=P_TOOL(&lt;Mechanism Number&gt;)</FORMAT>
+<SAMPLE>P1=P_TOOL</SAMPLE>
+<SAMPLE>P1=P_TOOL(1)</SAMPLE>
+<COMMENT>Returns the tool conversion data that is currently being set.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_NTOOL</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt;=P_NTOOL</FORMAT>
+<SAMPLE>P2=P_NTOOL</SAMPLE>
+<COMMENT>Returns the initial value (0,0,0,0,0,0,0,0)(0,0).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>P_ZERO</RSV_NAME>
+<CATEGORY>6</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = P_ZERO</FORMAT>
+<SAMPLE>P1=P_ZERO</SAMPLE>
+<COMMENT>Always returns (0, 0, 0, 0, 0, 0, 0, 0)(0,0).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ABS</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = ABS(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=ABS(-100)</SAMPLE>
+<COMMENT>Returns the absolute value of a given value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ALIGN</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = ALIGN(&lt;Position&gt;)</FORMAT>
+<SAMPLE>P2=ALIGN(P1)</SAMPLE>
+<COMMENT></COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ASC</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = ASC(&lt;Character String Expression&gt;)</FORMAT>
+<SAMPLE>M1=ASC(&quot;A&quot;)</SAMPLE>
+<COMMENT>Returns the character code of the first character in the string.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ATN</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = ATN(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=ATN(100/100)</SAMPLE>
+<COMMENT>Calculates the arc tangent.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ATN2</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = ATN2(&lt;Equation 1&gt;, &lt;Equation 2&gt;)</FORMAT>
+<SAMPLE>M1=ATN2(-100, 100)</SAMPLE>
+<COMMENT>Calculates the arc tangent.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>BIN$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Character String Variable &gt; = BIN$(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>C1$=BIN$(&amp;B11111111)</SAMPLE>
+<SAMPLE>C1$=BIN$(&amp;HFF)</SAMPLE>
+<COMMENT>Value is converted to a binary string.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CALARC</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable 4&gt; = CALARC(&lt;Pos 1&gt;, &lt;Pos 2&gt;, &lt;Pos 3&gt;, &lt;Numeric Var 1&gt;, &lt;Numeric Var 2&gt;, &lt;Numeric Var 3&gt;, &lt;Pos Var 1&gt;)</FORMAT>
+<SAMPLE>M1=CALARC(P1, P2, P3, M10, M20, M30, P10)</SAMPLE>
+<COMMENT>Provides information regarding the arc that contains the three specified points.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CHR$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Character String Variable &gt; = CHR$(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>C1$=CHR$(&amp;H41)</SAMPLE>
+<COMMENT>Returns the character that has the character code obtained from the specified equation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CINT</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = CINT(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=CINT(1.5)</SAMPLE>
+<COMMENT>Rounds the fractional part of an equation to convert the value into an integer.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CKSUM</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = CKSUM(&lt;Character String&gt;, &lt;Equation 1&gt;, &lt;Equation 2&gt;)</FORMAT>
+<SAMPLE>M1=CKSUM(&quot;ABCDEFG&quot;, 1, 3)</SAMPLE>
+<COMMENT>Calculates the checksum of the string.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>COS</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = COS(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=COS(RAD(60))</SAMPLE>
+<COMMENT>Gives the cosine.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CVI</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = CVI(&lt;Character String Expression&gt;)</FORMAT>
+<SAMPLE>M1=CVI(&quot;10ABC&quot;)</SAMPLE>
+<COMMENT>Converts the character codes of the first two characters of a string into an integer.</COMMENT>
+<COMMENT>M1 becomes &quot;&amp;H3031&quot; for the sample.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CVS</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = CVS(&lt;Character String Expression&gt;)</FORMAT>
+<SAMPLE>M1=CVS(&quot;FFFF&quot;)</SAMPLE>
+<COMMENT>Converts the character codes of the first four characters of a string into a single precision real number.</COMMENT>
+<COMMENT>M1 becomes &quot;12689.6&quot; for the sample.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CVD</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = CVD(&lt;Character String Expression&gt;)</FORMAT>
+<SAMPLE>M1=CVD(&quot;FFFFFFFF&quot;)</SAMPLE>
+<COMMENT>Converts the character codes of the first eight characters of a string into a double precision real number.</COMMENT>
+<COMMENT>M1 becomes &quot;3.52954+ E+30&quot; for the sample.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEG</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = DEG(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>IF DEG(P1.C) &lt; 171 OR DEG(P1.C) &gt; -150 THEN *LABEL</SAMPLE>
+<COMMENT>Converts the unit of angle measurement from radians (rad) into degrees (deg).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DIST</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; =  DIST(&lt;Position 1&gt;, &lt;Position 2&gt;)</FORMAT>
+<SAMPLE>M1=DIST(P1,P2)</SAMPLE>
+<COMMENT>Calculates the distance between two points (position variables).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>EXP</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = EXP(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=EXP(2)</SAMPLE>
+<COMMENT>Calculates exponential functions. (an equation that uses &quot;e&quot; as the base.)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FIX</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = FIX(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=FIX(5.5)</SAMPLE>
+<COMMENT>Returns the integral portion of the equation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FRAM</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable 4&gt; = FRAM(&lt;Numeric Variable 1&gt;, &lt;Numeric Variable 2&gt;, &lt;Numeric Variable 3&gt;)</FORMAT>
+<SAMPLE>P10=FRAM(P1, P2, P3)</SAMPLE>
+<COMMENT>Calculates the position data that indicates a coordinate system (plane) specified by three position data.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>HEX$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Character String Variable &gt; = HEX$(&lt;Equation&gt;)</FORMAT>
+<FORMAT>&lt;Character String Variable &gt; = HEX$(&lt;Equation&gt;, &lt;Number of output characters&gt;)</FORMAT>
+<SAMPLE>C1$=HEX$(&amp;H41FF)</SAMPLE>
+<SAMPLE>C2$=HEX$(&amp;H41FF, 2)</SAMPLE>
+<COMMENT>Converts the value of an equation (Between -32768 to 32767) into hexadecimal string.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>INT</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = INT(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=INT(3.3)</SAMPLE>
+<COMMENT>Returns the largest integer that does not exceed the value of the equation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>INV</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = INV(&lt;Position Variables&gt;)</FORMAT>
+<SAMPLE>P1=INV(P2)</SAMPLE>
+<COMMENT>Obtains the position data of the inverse matrix of the position variable.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>JTOP</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = JTOP(&lt;Joint Variables&gt;)</FORMAT>
+<SAMPLE>P1=JTOP(J1)</SAMPLE>
+<COMMENT>Given joint data will be converted into position data.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>LEFT$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = LEFT$(&lt;Character String&gt;, &lt;Equation&gt;)</FORMAT>
+<SAMPLE>C1$=LEFT$(&quot;ABC&quot;, 2)</SAMPLE>
+<COMMENT>Obtains a string of the specified length starting from the left end.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>LEN</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt;=LEN(&lt;Character String&gt;)</FORMAT>
+<SAMPLE>M1=LEN(&quot;ABCDEFG&quot;)</SAMPLE>
+<COMMENT>Returns the length of the string.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>LN</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = LN(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=LN(2)</SAMPLE>
+<COMMENT>Returns the natural logarithm. (Base e.)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>LOG</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = LOG(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=LOG(2)</SAMPLE>
+<COMMENT>Returns the common logarithm. (Base 10.)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MAX</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = MAX(&lt;Equation 1&gt;, &lt;Equation 2&gt;, ...)</FORMAT>
+<SAMPLE>M1=MAX(2, 1, 3, 4, 10, 100)</SAMPLE>
+<COMMENT>Obtains the maximum value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MID$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Character String Variable &gt; = MID$(&lt;Character String&gt;, &lt;Equation 2&gt;, &lt;Equation 3&gt;)</FORMAT>
+<SAMPLE>C1$=MID$(&quot;ABCDEFG&quot;, 3, 2)</SAMPLE>
+<COMMENT>Returns a string of the specified length starting from the specified position of the string.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MIN</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = MIN(&lt;Equation 1&gt;, &lt;Equation 2&gt;, ......)</FORMAT>
+<SAMPLE>M1=MIN(2, 1, 3, 4, 10, 100)</SAMPLE>
+<COMMENT>Obtains the minimum value.	</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MIRROR$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = MIRROR$(&lt;Character String Expression&gt;)</FORMAT>
+<SAMPLE>C1$=MIRROR$(&quot;BJ&quot;)</SAMPLE>
+<COMMENT>Inverts the bit string representing each character code of the string in binary,</COMMENT>
+<COMMENT>and obtains the character-coded string. C1$ becomes &quot;RB&quot; for the sample.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MKI$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Character String Variable &gt; = MKI$(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>C1$=MKI$(20299)</SAMPLE>
+<COMMENT>Converts the value of an equation (integer) into a two-byte string.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MKS$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = MKS$(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>C1$=MKS$(100.1)</SAMPLE>
+<COMMENT>Converts the value of an equation (single-precision real number) into a four-byte string.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MKD$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Character String Variable &gt;=MKD$(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>C1$=MKD$(10000.1)</SAMPLE>
+<COMMENT>Converts the value of an equation (double-precision real number) into a eight-byte string.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>POSCQ</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = POSCQ(&lt;Position Variables&gt;)</FORMAT>
+<SAMPLE>M1=POSCQ(P1)</SAMPLE>
+<COMMENT>Checks whether the given position is within the movement range.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>POSMID</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = POSMID(&lt;Position Variables 1&gt;, &lt;Position Variables 2&gt;,&lt;Equation 1&gt;, &lt;Equation 2&gt;)</FORMAT>
+<SAMPLE>P1=POSMID(P2, P3, 0, 0)</SAMPLE>
+<COMMENT>Obtain the middle position data when a linear interpolation is performed between two given points.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>PTOJ</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Joint Variable&gt; = PTOJ(&lt;Position Variables&gt;)</FORMAT>
+<SAMPLE>J1=PTOJ(P1)</SAMPLE>
+<COMMENT>Converts the given position data into a joint data.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>RAD</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = RAD(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>P1.C=RAD(90)</SAMPLE>
+<COMMENT>Converts the unit of angle measurement from degrees (deg) into radians (rad).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>RDFL1</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = RDFL1(&lt;Position Variables&gt;, &lt;Equation&gt;)</FORMAT>
+<SAMPLE>C1$=RDFL1(P1,1)</SAMPLE>
+<COMMENT>Returns the structure flag of the specified position using character data &quot;R&quot;/&quot;L&quot;, &quot;A&quot;/&quot;B&quot;, and &quot;N&quot;/&quot;F&quot;.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>RDFL2</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = RDFL2(&lt;Position Variables&gt;, &lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=RDFL2(P1, 6)</SAMPLE>
+<COMMENT>Returns the multiple rotation information of the specified joint axis.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>RND</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = RND(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>MRND=RND(0)</SAMPLE>
+<COMMENT>Generates a random number.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>RIGHT$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = RIGHT$(&lt;Character String&gt;, &lt;Equation&gt;)</FORMAT>
+<SAMPLE>C1$=RIGHT$(&quot;ABCDEFG&quot;, 3)</SAMPLE>
+<COMMENT>Obtains a string of the specified length starting from the right end.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SETFL1</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Position Variables&gt; = SETFL1(&lt;Position Variables&gt;, &lt;Character String&gt;)</FORMAT>
+<SAMPLE>P2=SETFL1(P1, &quot;LBF&quot;)</SAMPLE>
+<COMMENT>Changes the structure flag of the specified position using a string (such as &quot;RAN&quot;).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SETFL2</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Position Variables&gt;=SETFL2(&lt;Position Variables&gt;, &lt;Equation 1&gt;, &lt;Equation 2&gt;)</FORMAT>
+<SAMPLE>P2=SETFL2(P1,6,1)</SAMPLE>
+<COMMENT>Changes the multiple rotation data of the specified position.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SETJNT</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;&lt;Joint Variable&gt;&gt; = SETJNT(&lt;J1 Axis&gt;)</FORMAT>
+<FORMAT>&lt;&lt;Joint Variable&gt;&gt; = SETJNT(&lt;J1 Axis&gt;, &lt;J2 Axis&gt;)</FORMAT>
+<FORMAT>&lt;&lt;Joint Variable&gt;&gt; = SETJNT(&lt;J1 Axis&gt;, &lt;J2 Axis&gt;, &lt;J3 Axis&gt;)</FORMAT>
+<FORMAT>&lt;&lt;Joint Variable&gt;&gt; = SETJNT(&lt;J1 Axis&gt;, &lt;J2 Axis&gt;, &lt;J3 Axis&gt;, &lt;J4 Axis&gt;)</FORMAT>
+<FORMAT>&lt;&lt;Joint Variable&gt;&gt; = SETJNT(&lt;J1 Axis&gt;, &lt;J2 Axis&gt;, &lt;J3 Axis&gt;, &lt;J4 Axis&gt;), &lt;J5 Axis&gt;))</FORMAT>
+<FORMAT>&lt;&lt;Joint Variable&gt;&gt; = SETJNT(&lt;J1 Axis&gt;, &lt;J2 Axis&gt;, &lt;J3 Axis&gt;, &lt;J4 Axis&gt;), &lt;J5 Axis&gt;), &lt;J6 Axis&gt;))</FORMAT>
+<FORMAT>&lt;&lt;Joint Variable&gt;&gt; = SETJNT(&lt;J1 Axis&gt;, &lt;J2 Axis&gt;, &lt;J3 Axis&gt;, &lt;J4 Axis&gt;), &lt;J5 Axis&gt;), &lt;J6 Axis&gt;), &lt;J7 Axis&gt;))</FORMAT>
+<FORMAT>&lt;&lt;Joint Variable&gt;&gt; = SETJNT(&lt;J1 Axis&gt;, &lt;J2 Axis&gt;, &lt;J3 Axis&gt;, &lt;J4 Axis&gt;), &lt;J5 Axis&gt;), &lt;J6 Axis&gt;), &lt;J7 Axis&gt;), &lt;J8 Axis&gt;))</FORMAT>
+<SAMPLE>J2=SETJNT(M0)</SAMPLE>
+<SAMPLE>J2=SETJNT(M0, M10)</SAMPLE>
+<SAMPLE>J2=SETJNT(M0, M10, M20)</SAMPLE>
+<SAMPLE>J2=SETJNT(M0, M10, M20, M30)</SAMPLE>
+<SAMPLE>J2=SETJNT(M0, M10, M20, M30, M40)</SAMPLE>
+<SAMPLE>J2=SETJNT(M0, M10, M20, M30, M40, M50)</SAMPLE>
+<SAMPLE>J2=SETJNT(M0, M10, M20, M30, M40, M50, M60)</SAMPLE>
+<SAMPLE>J2=SETJNT(M0, M10, M20, M30, M40, M50, M60, M70)</SAMPLE>
+<COMMENT>Sets the value to the joint variable.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SETPOS</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;&lt;Position Variable&gt;&gt; = SETPOS(&lt;X Axis&gt;)</FORMAT>
+<FORMAT>&lt;&lt;Position Variable&gt;&gt; = SETPOS(&lt;X Axis&gt;, &lt;Y Axis&gt;)</FORMAT>
+<FORMAT>&lt;&lt;Position Variable&gt;&gt; = SETPOS(&lt;X Axis&gt;, &lt;Y Axis&gt;, &lt;Z Axis&gt;)</FORMAT>
+<FORMAT>&lt;&lt;Position Variable&gt;&gt; = SETPOS(&lt;X Axis&gt;, &lt;Y Axis&gt;, &lt;Z Axis&gt;, &lt;A Axis&gt;)</FORMAT>
+<FORMAT>&lt;&lt;Position Variable&gt;&gt; = SETPOS(&lt;X Axis&gt;, &lt;Y Axis&gt;, &lt;Z Axis&gt;, &lt;A Axis&gt;, &lt;B Axis&gt;)</FORMAT>
+<FORMAT>&lt;&lt;Position Variable&gt;&gt; = SETPOS(&lt;X Axis&gt;, &lt;Y Axis&gt;, &lt;Z Axis&gt;, &lt;A Axis&gt;, &lt;B Axis&gt;, &lt;C Axis&gt;)</FORMAT>
+<FORMAT>&lt;&lt;Position Variable&gt;&gt; = SETPOS(&lt;X Axis&gt;, &lt;Y Axis&gt;, &lt;Z Axis&gt;, &lt;A Axis&gt;, &lt;B Axis&gt;, &lt;C Axis&gt;, &lt;L1 Axis&gt;)</FORMAT>
+<FORMAT>&lt;&lt;Position Variable&gt;&gt; = SETPOS(&lt;X Axis&gt;, &lt;Y Axis&gt;, &lt;Z Axis&gt;, &lt;A Axis&gt;, &lt;B Axis&gt;, &lt;C Axis&gt;, &lt;L1 Axis&gt;, &lt;L2 Axis&gt;)</FORMAT>
+<SAMPLE>P2=SETPOS(P1.X)</SAMPLE>
+<SAMPLE>P2=SETPOS(P1.X, P1.Y)</SAMPLE>
+<SAMPLE>P2=SETPOS(P1.X, P1.Y, P1.Z)</SAMPLE>
+<SAMPLE>P2=SETPOS(P1.X, P1.Y, P1.Z, M10)</SAMPLE>
+<SAMPLE>P2=SETPOS(P1.X, P1.Y, P1.Z, M10, M20)</SAMPLE>
+<SAMPLE>P2=SETPOS(P1.X, P1.Y, P1.Z, M10, M20, M30)</SAMPLE>
+<SAMPLE>P2=SETPOS(P1.X, P1.Y, P1.Z, M10, M20, M30, 1)</SAMPLE>
+<SAMPLE>P2=SETPOS(P1.X, P1.Y, P1.Z, M10, M20, M30, 1, 2)</SAMPLE>
+<COMMENT>Sets the value to the Position variable.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SGN</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = SGN(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M2=SGN(-12)</SAMPLE>
+<COMMENT>Checks the sign of the equation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SIN</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = SIN(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=SIN(RAD(60))</SAMPLE>
+<COMMENT>Calculates the sine.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SQR</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = SQR(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=SQR(2)</SAMPLE>
+<COMMENT>Calculates the square root of an equation value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>STRPOS</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = STRPOS(&lt;Character String 1&gt;, &lt;Character String 2&gt;)</FORMAT>
+<SAMPLE>M1=STRPOS(&quot;ABCDEFG&quot;, &quot;DEF&quot;)</SAMPLE>
+<COMMENT>Searches for a specified string in a string.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>STR$</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Character String Variable&gt; = STR$(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>C1$=STR$(123)</SAMPLE>
+<COMMENT>Converts the value of the equation into a decimal string.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TAN</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = TAN(&lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=TAN(RAD(60))</SAMPLE>
+<COMMENT>Calculates the tangent.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TRPOS</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Position Variable&gt; = TRPOS(&lt;Position Variables&gt;)</FORMAT>
+<SAMPLE>P1=TRPOS(P2)</SAMPLE>
+<COMMENT>Acquire the coordinate position of a workpiece being tracked.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TRWCUR</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = TRWCUR(&lt;Encoder Number&gt;, &lt;Position Variables&gt;, &lt;Encoder Value&gt;)</FORMAT>
+<SAMPLE>P1=TRWCUR(MENCNO%,PBPOS,MENC#)</SAMPLE>
+<COMMENT>Obtain the current position of a workpiece.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>VAL</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = VAL(&lt;Character String Expression&gt;)</FORMAT>
+<SAMPLE>M1=VAL(&quot;15&quot;)</SAMPLE>
+<COMMENT>Converts the value in the string into a numerical value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ZONE</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = ZONE(&lt;Position 1&gt;, &lt;Position 2&gt;, &lt;Position 3&gt;)</FORMAT>
+<SAMPLE>M1=ZONE(P1, P2, P3)</SAMPLE>
+<COMMENT>Checks if the specified position is within the specified area (a rectangular solid defined by two points).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ZONE2</RSV_NAME>
+<CATEGORY>7</CATEGORY>
+<FORMAT>&lt;Numeric Variable&gt; = ZONE2(&lt;Position 1&gt;, &lt;Position 2&gt;, &lt;Position 3&gt;, &lt;Equation&gt;)</FORMAT>
+<SAMPLE>M1=ZONE2(P1, P2, P3, 50)</SAMPLE>
+<COMMENT>Checks if the specified position is within the specified area (Cylindrical area defined by two points).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ACCEL</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>ACCEL  </FORMAT>
+<FORMAT>ACCEL  &lt;Accel rate&gt;</FORMAT>
+<FORMAT>ACCEL  &lt;Accel rate&gt;, &lt;Decel rate&gt;</FORMAT>
+<FORMAT>ACCEL  &lt;Accel rate&gt;, &lt;Decel rate&gt;, &lt;Accel rate when moving up&gt;</FORMAT>
+<FORMAT>ACCEL  &lt;Accel rate&gt;, &lt;Decel rate&gt;, &lt;Accel rate when moving up&gt;, &lt;Decel rate when moving up&gt;</FORMAT>
+<FORMAT>ACCEL  &lt;Accel rate&gt;, &lt;Decel rate&gt;, &lt;Accel rate when moving up&gt;, &lt;Decel rate when moving up&gt;, &lt;Accel rate when moving down&gt;</FORMAT>
+<FORMAT>ACCEL  &lt;Accel rate&gt;, &lt;Decel rate&gt;, &lt;Accel rate when moving up&gt;, &lt;Decel rate when moving up&gt;, &lt;Accel rate when moving down&gt;, &lt;Decel rate when moving down&gt;</FORMAT>
+<FORMAT>ACCEL  &lt;Accel rate&gt;, &lt;Decel rate&gt;, , , &lt;Accel rate when moving down&gt;, &lt;Decel rate when moving down&gt;</FORMAT>
+<FORMAT>ACCEL  , , &lt;Accel rate when moving up&gt;, &lt;Decel rate when moving up&gt;</FORMAT>
+<FORMAT>ACCEL  , , &lt;Accel rate when moving up&gt;, &lt;Decel rate when moving up&gt;, &lt;Accel rate when moving down&gt;, &lt;Decel rate when moving down&gt;</FORMAT>
+<FORMAT>ACCEL  , , , , &lt;Accel rate when moving down&gt;, &lt;Decel rate when moving down&gt;</FORMAT>
+<SAMPLE>ACCEL</SAMPLE>
+<SAMPLE>ACCEL 50</SAMPLE>
+<SAMPLE>ACCEL 50, 100</SAMPLE>
+<SAMPLE>ACCEL 100, 100, 20</SAMPLE>
+<SAMPLE>ACCEL 100, 100, 20, 20</SAMPLE>
+<SAMPLE>ACCEL 100, 100, 100, 100, 20</SAMPLE>
+<SAMPLE>ACCEL 100, 100, 100, 100, 20, 20</SAMPLE>
+<SAMPLE>ACCEL 50, 50, , , 20, 20</SAMPLE>
+<SAMPLE>ACCEL , , 50, 50</SAMPLE>
+<SAMPLE>ACCEL , , 50, 50, 20, 20</SAMPLE>
+<SAMPLE>ACCEL , , , , 20, 20</SAMPLE>
+<COMMENT>Designate the robot&apos;s acceleration and deceleration speeds as a percentage (%).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ACT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>ACT  &lt;Priority No.&gt; = &lt;1/0&gt;</FORMAT>
+<SAMPLE>ACT 1=1</SAMPLE>
+<COMMENT>This instruction specifies whether to allow or prohibit interrupt processing caused by signals, etc.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>BASE</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>BASE  &lt;Base conversion data&gt;</FORMAT>
+<SAMPLE>BASE (50, 100, 0, 0, 0, 90)</SAMPLE>
+<COMMENT>With this instruction, it is possible to move or rotate the robot coordinate system. Specify the base conversion data for this instruction.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CALLP</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>CALLP  &quot;&lt;Program name&gt;&quot;</FORMAT>
+<FORMAT>CALLP  &quot;&lt;Program name&gt;&quot;, &lt;Argument&gt;</FORMAT>
+<FORMAT>CALLP  &quot;&lt;Program name&gt;&quot;, &lt;Argument&gt;, &lt;Argument&gt;...</FORMAT>
+<SAMPLE>CALLP &quot;10&quot;</SAMPLE>
+<SAMPLE>CALLP &quot;10&quot;, M1</SAMPLE>
+<SAMPLE>CALLP &quot;10&quot;, M1, P1</SAMPLE>
+<COMMENT>This instruction executes the specified program (by calling the program in a manner similar to using GOSUB to call a subroutine)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CHRSRCH</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>CHRSRCH  &lt;Character string array variable&gt;, &lt;Character string&gt;, &lt;Search result storage destination&gt;</FORMAT>
+<SAMPLE>CHRSRCH C1$(1), &quot;ROBOT&quot;, M1</SAMPLE>
+<COMMENT>Searches the character string out of the character array.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CLOSE</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>CLOSE  </FORMAT>
+<FORMAT>CLOSE  #&lt;File No.&gt;</FORMAT>
+<FORMAT>CLOSE  #&lt;File No.&gt;, #&lt;File No.&gt;</FORMAT>
+<SAMPLE>CLOSE</SAMPLE>
+<SAMPLE>CLOSE #1</SAMPLE>
+<SAMPLE>CLOSE #1, #2</SAMPLE>
+<COMMENT>Closes the designated file.(including communication lines)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CLR</RSV_NAME>
+<CATEGORY>2</CATEGORY>
+<FORMAT>CLR  &lt;Type&gt;</FORMAT>
+<SAMPLE>CLR 0</SAMPLE>
+<SAMPLE>CLR 1</SAMPLE>
+<SAMPLE>CLR 2</SAMPLE>
+<SAMPLE>CLR 3</SAMPLE>
+<COMMENT>This instruction clears general-purpose output signals, local numerical variables in a program, and numerical external variables.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CMP JNT</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>CMP  JNT, &lt;Axis designation&gt;</FORMAT>
+<SAMPLE>CMP JNT, &amp;B11</SAMPLE>
+<COMMENT>Start the soft control mode (compliance mode) of the specified axis in the JOINT coordinates system.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CMP POS</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>CMP  POS, &lt;Axis designation&gt;</FORMAT>
+<SAMPLE>CMP POS, &amp;B011011</SAMPLE>
+<COMMENT>Start the soft control mode (compliance mode) of the specified axis in the XYZ coordinates system.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CMP TOOL</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>CMP TOOL, &lt;Axis designation&gt;</FORMAT>
+<SAMPLE>CMP TOOL, &amp;B011011</SAMPLE>
+<COMMENT>Start the soft control mode (compliance mode) of the specified axis in the TOOL coordinates system.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CMP OFF</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>CMP  OFF</FORMAT>
+<SAMPLE>CMP OFF</SAMPLE>
+<COMMENT>Release the soft control mode (compliance mode).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CMPG</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>CMPG  &lt;X axis gain&gt;, , , , , , ,</FORMAT>
+<FORMAT>CMPG  &lt;X axis gain&gt;, &lt;Y axis gain&gt;, , , , , ,</FORMAT>
+<FORMAT>CMPG  &lt;X axis gain&gt;, &lt;Y axis gain&gt;, &lt;Z axis gain&gt;, , , , ,</FORMAT>
+<FORMAT>CMPG  &lt;X axis gain&gt;, &lt;Y axis gain&gt;, &lt;Z axis gain&gt;, &lt;A axis gain&gt;, , , ,</FORMAT>
+<FORMAT>CMPG  &lt;X axis gain&gt;, &lt;Y axis gain&gt;, &lt;Z axis gain&gt;, &lt;A axis gain&gt;, &lt;B axis gain&gt;, , ,</FORMAT>
+<FORMAT>CMPG  &lt;X axis gain&gt;, &lt;Y axis gain&gt;, &lt;Z axis gain&gt;, &lt;A axis gain&gt;, &lt;B axis gain&gt;, &lt;C axis gain&gt;, ,</FORMAT>
+<FORMAT>CMPG  &lt;J1 axis gain&gt;, , , , , , ,</FORMAT>
+<FORMAT>CMPG  &lt;J1 axis gain&gt;, &lt;J2 axis gain&gt;, , , , , ,</FORMAT>
+<FORMAT>CMPG  &lt;J1 axis gain&gt;, &lt;J2 axis gain&gt;, &lt;J3 axis gain&gt;, , , , ,</FORMAT>
+<FORMAT>CMPG  &lt;J1 axis gain&gt;, &lt;J2 axis gain&gt;, &lt;J3 axis gain&gt;, &lt;J4 axis gain&gt;, , , ,</FORMAT>
+<FORMAT>CMPG  &lt;J1 axis gain&gt;, &lt;J2 axis gain&gt;, &lt;J3 axis gain&gt;, &lt;J4 axis gain&gt;, &lt;J5 axis gain&gt;, , ,</FORMAT>
+<FORMAT>CMPG  &lt;J1 axis gain&gt;, &lt;J2 axis gain&gt;, &lt;J3 axis gain&gt;, &lt;J4 axis gain&gt;, &lt;J5 axis gain&gt;, &lt;J6 axis gain&gt;, ,</FORMAT>
+<SAMPLE>CMPG 0.5, , , , , , ,</SAMPLE>
+<SAMPLE>CMPG 0.5, 0.5, , , , , ,</SAMPLE>
+<SAMPLE>CMPG 0.5, 0.5, 0.5, , , , ,</SAMPLE>
+<SAMPLE>CMPG 0.5, 0.5, 0.5, 0.5, , , ,</SAMPLE>
+<SAMPLE>CMPG 0.5, 0.5, 0.5, 0.5, 0.5, , ,</SAMPLE>
+<SAMPLE>CMPG 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, ,</SAMPLE>
+<COMMENT>Specify the softness of robot control.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CNT</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>CNT  &lt;Continuous movement mode/acceleration/deceleration movement mode&gt;</FORMAT>
+<FORMAT>CNT  &lt;Continuous movement mode/acceleration/deceleration movement mode&gt;, &lt;Numeric value 1&gt;</FORMAT>
+<FORMAT>CNT  &lt;Continuous movement mode/acceleration/deceleration movement mode&gt;, &lt;Numeric value 1&gt;, &lt;Numeric value 2&gt;</FORMAT>
+<SAMPLE>CNT 0</SAMPLE>
+<SAMPLE>CNT 1, 300</SAMPLE>
+<SAMPLE>CNT 1, 100, 200</SAMPLE>
+<COMMENT>Designates continuous movement control for interpolation. Shortening of the operating time can be performed by carrying out continuous movement.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>COLCHK OFF</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>COLCHK  ON</FORMAT>
+<FORMAT>COLCHK  ON, NOERR</FORMAT>
+<FORMAT>COLCHK  OFF</FORMAT>
+<SAMPLE>COLCHK OFF</SAMPLE>
+<COMMENT>Set to enable/disable the impact detection function in automatic operation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>COLCHK ON</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>COLCHK ON</FORMAT>
+<FORMAT>COLCHK ON, NOERR</FORMAT>
+<FORMAT>COLCHK OFF</FORMAT>
+<SAMPLE>COLCHK ON</SAMPLE>
+<SAMPLE>COLCHK ON, NOERR</SAMPLE>
+<COMMENT>Set to enable/disable the impact detection function in automatic operation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>COLLVL</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>COLLVL  &lt;J1 axis&gt;, , , , , , ,</FORMAT>
+<FORMAT>COLLVL  &lt;J1 axis&gt;, &lt;J2 axis&gt;, , , , , ,</FORMAT>
+<FORMAT>COLLVL  &lt;J1 axis&gt;, &lt;J2 axis&gt;, &lt;J3 axis&gt;, , , , ,</FORMAT>
+<FORMAT>COLLVL  &lt;J1 axis&gt;, &lt;J2 axis&gt;, &lt;J3 axis&gt;, &lt;J4 axis&gt;, , , ,</FORMAT>
+<FORMAT>COLLVL  &lt;J1 axis&gt;, &lt;J2 axis&gt;, &lt;J3 axis&gt;, &lt;J4 axis&gt;, &lt;J5 axis&gt;, , ,</FORMAT>
+<FORMAT>COLLVL  &lt;J1 axis&gt;, &lt;J2 axis&gt;, &lt;J3 axis&gt;, &lt;J4 axis&gt;, &lt;J5 axis&gt;, &lt;J6 axis&gt;, ,</FORMAT>
+<SAMPLE>COLLVL 50, , , , , , ,</SAMPLE>
+<SAMPLE>COLLVL 50, 50, , , , , ,</SAMPLE>
+<SAMPLE>COLLVL 50, 50, 50, , , , ,</SAMPLE>
+<SAMPLE>COLLVL 50, 50, 50, 50, , , ,</SAMPLE>
+<SAMPLE>COLLVL 50, 50, 50, 50, 50, , ,</SAMPLE>
+<SAMPLE>COLLVL 50, 50, 50, 50, 50, 50, ,</SAMPLE>
+<COMMENT>Set the detection level of the impact detection function in automatic operation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>COM ON</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>COM  ON</FORMAT>
+<FORMAT>COM(&lt;Communication Line No.&gt;)  ON</FORMAT>
+<SAMPLE>COM ON</SAMPLE>
+<SAMPLE>COM(1) ON</SAMPLE>
+<COMMENT>Allows interrupts from a communication line.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>COM OFF</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>COM  OFF</FORMAT>
+<FORMAT>COM(&lt;Communication Line No.&gt;)  OFF</FORMAT>
+<SAMPLE>COM OFF</SAMPLE>
+<SAMPLE>COM(1) OFF</SAMPLE>
+<COMMENT>Prevents interrupts from a communication line.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>COM STOP</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>COM  STOP</FORMAT>
+<FORMAT>COM&lt;Communication Line No.&gt;)  STOP</FORMAT>
+<SAMPLE>COM STOP</SAMPLE>
+<SAMPLE>COM(1) STOP</SAMPLE>
+<COMMENT>Prohibits interrupts from a communication line.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEF ACT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>DEF  ACT  &lt;Priority No.&gt;, &lt;Expression&gt;  &lt;Process&gt;</FORMAT>
+<FORMAT>DEF  ACT  &lt;Priority No.&gt;, &lt;Expression&gt;  &lt;Process&gt; , &lt;Type&gt;</FORMAT>
+<SAMPLE>DEF ACT 1, M_IN(17)=1 GOSUB *LABEL</SAMPLE>
+<SAMPLE>DEF ACT 1, M_IN(17)=1 GOSUB *LABEL, S</SAMPLE>
+<SAMPLE>DEF ACT 1, M_IN(17)=1 GOSUB *LABEL, L</SAMPLE>
+<COMMENT>This instruction defines the interrupt conditions for monitoring signals concurrently and performing interrupt processing during program execution, as well as the processing that will take place when an interrupt occurs.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEF ARCH</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>DEF  ARCH  &lt;Arch number&gt;</FORMAT>
+<FORMAT>DEF  ARCH  &lt;Arch number&gt;, &lt;upward movement increment&gt;</FORMAT>
+<FORMAT>DEF  ARCH  &lt;Arch number&gt;, &lt;upward movement increment&gt;, &lt;downward movement increment&gt;</FORMAT>
+<FORMAT>DEF  ARCH  &lt;Arch number&gt;, &lt;upward movement increment&gt;, &lt;downward movement increment&gt;, &lt;Upward evasion increment&gt;</FORMAT>
+<FORMAT>DEF  ARCH  &lt;Arch number&gt;, &lt;upward movement increment&gt;, &lt;downward movement increment&gt;, &lt;Upward evasion increment&gt;, &lt;downward evasion increment&gt;</FORMAT>
+<FORMAT>DEF  ARCH  &lt;Arch number&gt;, &lt;upward movement increment&gt;, &lt;downward movement increment&gt;, &lt;Upward evasion increment&gt;, &lt;downward evasion increment&gt;, &lt;interpolation type&gt;</FORMAT>
+<FORMAT>DEF  ARCH  &lt;Arch number&gt;, &lt;upward movement increment&gt;, &lt;downward movement increment&gt;, &lt;Upward evasion increment&gt;, &lt;downward evasion increment&gt;, &lt;interpolation type&gt;, &lt;interpolation type1&gt;</FORMAT>
+<FORMAT>DEF  ARCH  &lt;Arch number&gt;, &lt;upward movement increment&gt;, &lt;downward movement increment&gt;, &lt;Upward evasion increment&gt;, &lt;downward evasion increment&gt;, &lt;interpolation type&gt;, &lt;interpolation type1&gt;, &lt;interpolation type2&gt;</FORMAT>
+<SAMPLE>DEF ARCH 1</SAMPLE>
+<SAMPLE>DEF ARCH 1, 5</SAMPLE>
+<SAMPLE>DEF ARCH 1, 5, 5</SAMPLE>
+<SAMPLE>DEF ARCH 1, 5, 5, 20</SAMPLE>
+<SAMPLE>DEF ARCH 1, 5, 5, 20, 20</SAMPLE>
+<SAMPLE>DEF ARCH 1, 5, 5, 20, 20, 1</SAMPLE>
+<SAMPLE>DEF ARCH 1, 5, 5, 20, 20, 1, 0</SAMPLE>
+<SAMPLE>DEF ARCH 1, 5, 5, 20, 20, 1, 0, 0</SAMPLE>
+<COMMENT>This instruction defines an arch shape for the arch motion movement corresponding to the MVA instruction.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEF CHAR</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>DEF  CHAR  &lt;Character string variable name&gt;</FORMAT>
+<FORMAT>DEF  CHAR  &lt;Character string variable name&gt;, &lt;Character string variable name&gt;...</FORMAT>
+<SAMPLE>DEF CHAR MESSAGE</SAMPLE>
+<SAMPLE>DEF CHAR MESSAGE, CMSG</SAMPLE>
+<COMMENT>Declares a character string variable.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEF FN</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>DEF  FN &lt;Identification character&gt;&lt;Name&gt; = &lt;Function Definition Expression&gt;</FORMAT>
+<FORMAT>DEF  FN &lt;Identification character&gt;&lt;Name&gt;(&lt;Dummy Argument&gt;) = &lt;Function Definition Expression&gt;</FORMAT>
+<FORMAT>DEF  FN &lt;Identification character&gt;&lt;Name&gt;(&lt;Dummy Argument&gt;, &lt;Dummy Argument&gt;...) = &lt;Function Definition Expression&gt;</FORMAT>
+<SAMPLE>DEF FNMROUTE=SQR(2)</SAMPLE>
+<SAMPLE>DEF FNMDBL(MA)=MA + MA</SAMPLE>
+<SAMPLE>DEF FNPADD(PA, PB)=PA + PB</SAMPLE>
+<COMMENT>Defines a function and gives it name.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEF INTE</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>DEF  INTE  &lt;Numeric value variable name&gt;</FORMAT>
+<FORMAT>DEF  INTE  &lt;Numeric value variable name&gt;, &lt;Numeric value variable name&gt;...</FORMAT>
+<SAMPLE>DEF INTE WORK1</SAMPLE>
+<SAMPLE>DEF INTE WORK1, WORK2</SAMPLE>
+<COMMENT>Use this instruction to declare numerical values.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEF FLOAT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>DEF  FLOAT  &lt;Numeric value variable name&gt;</FORMAT>
+<FORMAT>DEF  FLOAT  &lt;Numeric value variable name&gt;, &lt;Numeric value variable name&gt;...</FORMAT>
+<SAMPLE>DEF FLOAT WORK1</SAMPLE>
+<SAMPLE>DEF FLOAT WORK1, WORK2</SAMPLE>
+<COMMENT>Use this instruction to declare numerical values.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEF DOUBLE</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>DEF  DOUBLE  &lt;Numeric value variable name&gt;</FORMAT>
+<FORMAT>DEF  DOUBLE  &lt;Numeric value variable name&gt;, &lt;Numeric value variable name&gt;...</FORMAT>
+<SAMPLE>DEF DOUBLE WORK1</SAMPLE>
+<SAMPLE>DEF DOUBLE WORK1, WORK2</SAMPLE>
+<COMMENT>Use this instruction to declare numerical values.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEF IO</RSV_NAME>
+<CATEGORY>2</CATEGORY>
+<FORMAT>DEF  IO  &lt;Input/output variable name&gt; = &lt;Type designation&gt;, &lt;Input/output bit No.&gt;</FORMAT>
+<FORMAT>DEF  IO  &lt;Input/output variable name&gt; = &lt;Type designation&gt;, &lt;Input/output bit No.&gt;, &lt;Mask information&gt;</FORMAT>
+<SAMPLE>DEF IO PORT1 = BIT, 6</SAMPLE>
+<SAMPLE>DEF IO PORT2 = BYTE, 5, &amp;H0F</SAMPLE>
+<COMMENT>Declares an input/output variable.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEF JNT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>DEF  JNT  &lt;Joint variable name&gt;</FORMAT>
+<FORMAT>DEF  JNT  &lt;Joint variable name&gt;, &lt;Joint variable name&gt;...</FORMAT>
+<SAMPLE>DEF JNT SAFE</SAMPLE>
+<SAMPLE>DEF JNT SAFE, WRIST</SAMPLE>
+<COMMENT>This instruction declares joint type position variables.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEF PLT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>DEF  PLT  &lt;Pallet No.&gt;, &lt;Start Point&gt;, &lt;End Point A&gt;, &lt;End Point B&gt;, &lt;Quantity A&gt;, &lt;Quantity B&gt;, &lt;Pallet Pattern&gt;</FORMAT>
+<FORMAT>DEF  PLT  &lt;Pallet No.&gt;, &lt;Start Point&gt;, &lt;End Point A&gt;, &lt;End Point B&gt;, &lt;Diagonal Point&gt;, &lt;Quantity A&gt;, &lt;Quantity B&gt;, &lt;Pallet Pattern&gt;</FORMAT>
+<SAMPLE>DEF PLT 1, P1, P2, P3, , 3, 4, 1</SAMPLE>
+<SAMPLE>DEF PLT 1, P1, P2, P3, P4, 3, 4, 1</SAMPLE>
+<COMMENT>Defines the pallet. (3-point pallet, 4-point pallet)</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEF POS</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>DEF  POS  &lt;Position variable name&gt;</FORMAT>
+<FORMAT>DEF  POS  &lt;Position variable name&gt;, &lt;Position variable name&gt;...</FORMAT>
+<SAMPLE>DEF POS WORKSET</SAMPLE>
+<SAMPLE>DEF POS WORKSET1, WORKSET2</SAMPLE>
+<COMMENT>This instruction declares XYZ type position variables.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DIM</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>DIM  &lt;Variable name&gt;(&lt;Eelement Value&gt;)</FORMAT>
+<FORMAT>DIM  &lt;Variable name&gt;(&lt;Eelement Value&gt;, &lt;Eelement Value&gt;)</FORMAT>
+<FORMAT>DIM  &lt;Variable name&gt;(&lt;Eelement Value&gt;, &lt;Eelement Value&gt;, &lt;Eelement Value&gt;)</FORMAT>
+<FORMAT>DIM  &lt;Variable name&gt;(&lt;Eelement Value&gt;), &lt;Variable name&gt;(&lt;Eelement Value&gt;)...</FORMAT>
+<FORMAT>DIM  &lt;Variable name&gt;(&lt;Eelement Value&gt;), &lt;Variable name&gt;(&lt;Eelement Value&gt;, &lt;Eelement Value&gt;)...</FORMAT>
+<FORMAT>DIM  &lt;Variable name&gt;(&lt;Eelement Value&gt;), &lt;Variable name&gt;(&lt;Eelement Value&gt;, &lt;Eelement Value&gt;, &lt;Eelement Value&gt;)...</FORMAT>
+<SAMPLE>DIM PDATA(10)</SAMPLE>
+<SAMPLE>DIM MD6(2, 3)</SAMPLE>
+<SAMPLE>DIM MD24(2, 3, 4)</SAMPLE>
+<SAMPLE>DIM M1%(6), M2!(4)</SAMPLE>
+<SAMPLE>DIM M1%(6), PD1(5, 5)</SAMPLE>
+<SAMPLE>DIM M1%(6), PD2(5, 5, 5)</SAMPLE>
+<COMMENT>Declares the quantity of elements in the array variable.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DLY</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>DLY  &lt;Time&gt;</FORMAT>
+<FORMAT>M_OUT(1) = 1 DLY  &lt;Time&gt;</FORMAT>
+<SAMPLE>DLY 30</SAMPLE>
+<SAMPLE>M_OUT(17)=1 DLY 0.5</SAMPLE>
+<COMMENT>At a designated time, it causes a wait. / Designates an output time for a pulse.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>END</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>END</FORMAT>
+<SAMPLE>END</SAMPLE>
+<COMMENT>This instruction defines the final line of a program.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ERROR</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>ERROR  &lt;Error No.&gt;</FORMAT>
+<SAMPLE>ERROR 9000</SAMPLE>
+<COMMENT>This instruction makes a program generate an error.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FINE</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>FINE  &lt;No. of pulses&gt;</FORMAT>
+<FORMAT>FINE  &lt;No. of pulses&gt;, &lt;Axis No.&gt;</FORMAT>
+<SAMPLE>FINE 300</SAMPLE>
+<SAMPLE>FINE 100, 2</SAMPLE>
+<COMMENT>This instruction specifies completion conditions of the robot&apos;s positioning. It is invalid during the smooth movement control (CNT 1).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FOR</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>FOR  &lt;Counter&gt; = &lt;Default value&gt; TO &lt;End Value&gt;</FORMAT>
+<FORMAT>FOR  &lt;Counter&gt; = &lt;Default value&gt; TO &lt;End Value&gt; STEP &lt;Increment&gt;</FORMAT>
+<FORMAT>NEXT</FORMAT>
+<FORMAT>NEXT  &lt;Counter 1&gt;</FORMAT>
+<SAMPLE>FOR M1=1 TO 10</SAMPLE>
+<SAMPLE>FOR M1=1 TO 10 STEP 1</SAMPLE>
+<SAMPLE>NEXT</SAMPLE>
+<SAMPLE>NEXT M1</SAMPLE>
+<COMMENT>Repeatedly executes the program between the FOR statement and NEXT statement until the end conditions are satisfied.</COMMENT>
+<END_NAME>NEXT</END_NAME>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NEXT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>FOR  &lt;Counter&gt; = &lt;Default value&gt; TO &lt;End Value&gt;</FORMAT>
+<FORMAT>FOR  &lt;Counter&gt; = &lt;Default value&gt; TO &lt;End Value&gt; STEP &lt;Increment&gt;</FORMAT>
+<FORMAT>NEXT</FORMAT>
+<FORMAT>NEXT  &lt;Counter 1&gt;</FORMAT>
+<SAMPLE>FOR M1=1 TO 10</SAMPLE>
+<SAMPLE>FOR M1=1 TO 10 STEP 1</SAMPLE>
+<SAMPLE>NEXT</SAMPLE>
+<SAMPLE>NEXT M1</SAMPLE>
+<COMMENT>Repeatedly executes the program between the FOR statement and NEXT statement until the end conditions are satisfied.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>STEP</RSV_NAME>
+<CATEGORY>8</CATEGORY>
+<FORMAT>FOR  &lt;Counter&gt; = &lt;Default value&gt; TO &lt;End Value&gt;</FORMAT>
+<FORMAT>FOR  &lt;Counter&gt; = &lt;Default value&gt; TO &lt;End Value&gt; STEP &lt;Increment&gt;</FORMAT>
+<FORMAT>NEXT</FORMAT>
+<FORMAT>NEXT  &lt;Counter 1&gt;</FORMAT>
+<SAMPLE>FOR M1=1 TO 10 STEP 1</SAMPLE>
+<SAMPLE>FOR M1=10 TO 1 STEP -1</SAMPLE>
+<SAMPLE>NEXT</SAMPLE>
+<SAMPLE>NEXT M1</SAMPLE>
+<COMMENT>Repeatedly executes the program between the FOR statement and NEXT statement until the end conditions are satisfied.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>FPRM</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>FPRM  &lt;Dummy Argument&gt;</FORMAT>
+<FORMAT>FPRM  &lt;Dummy Argument&gt;, &lt;Dummy Argument&gt;...</FORMAT>
+<SAMPLE>FPRM M1</SAMPLE>
+<SAMPLE>FPRM M1, P1</SAMPLE>
+<COMMENT>Defines the order of the arguments, the type, and number for the main program that uses arguments in a sub program.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>GETM</RSV_NAME>
+<CATEGORY>3</CATEGORY>
+<FORMAT>GETM  &lt;Mechanism No.&gt;</FORMAT>
+<SAMPLE>GETM 1</SAMPLE>
+<COMMENT>Control right is acquired by specifying the mechanism number of the robot to be controlled.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>GOSUB</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>GOSUB  &lt;Call Destination&gt;</FORMAT>
+<SAMPLE>GOSUB 1000</SAMPLE>
+<COMMENT>Calls up the subroutine at the designated line No. or line label.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>GOTO</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>GOTO  &lt;Branch Destination&gt;</FORMAT>
+<SAMPLE>GOTO 10</SAMPLE>
+<COMMENT>This instruction makes a program branch to the specified line number or label line unconditionally.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>HLT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>HLT</FORMAT>
+<SAMPLE>HLt</SAMPLE>
+<COMMENT>Interrupts the execution of the program and movement of the robot, and stops.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>HOPEN</RSV_NAME>
+<CATEGORY>5</CATEGORY>
+<FORMAT>HOPEN  &lt;Hand No.&gt;</FORMAT>
+<FORMAT>HOPEN  &lt;Hand No.&gt;, &lt;Starting grasp force&gt;, &lt;Holding grasp force&gt;, &lt;Starting grasp force holding time&gt;</FORMAT>
+<SAMPLE>HOPEN 1</SAMPLE>
+<SAMPLE>HOPEN 1, 32, 20, 1</SAMPLE>
+<COMMENT>Commands the hand to open.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>HCLOSE</RSV_NAME>
+<CATEGORY>5</CATEGORY>
+<FORMAT>HCLOSE  &lt;Hand No.&gt;</FORMAT>
+<SAMPLE>HCLOSE 1</SAMPLE>
+<COMMENT>Commands the hand to close.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>IF</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>IF  &lt;Expression&gt;  THEN  &lt;Process&gt;  </FORMAT>
+<FORMAT>IF  &lt;Expression&gt;  THEN  &lt;Process&gt;  ELSE &lt;Process&gt;</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>ELSE</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>ENDIF</FORMAT>
+<SAMPLE>IF M1&gt;10 THEN</SAMPLE>
+<SAMPLE>ELSE</SAMPLE>
+<SAMPLE>ENDIF</SAMPLE>
+<COMMENT>A process is selected and executed according to the results of an expression.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>THEN</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>IF  &lt;Expression&gt;  THEN  &lt;Process&gt;  </FORMAT>
+<FORMAT>IF  &lt;Expression&gt;  THEN  &lt;Process&gt;  ELSE &lt;Process&gt;</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>ELSE</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>ENDIF</FORMAT>
+<SAMPLE>IF M1&gt;10 THEN</SAMPLE>
+<SAMPLE>ELSE</SAMPLE>
+<SAMPLE>ENDIF</SAMPLE>
+<COMMENT>A process is selected and executed according to the results of an expression.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ELSE</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>IF  &lt;Expression&gt;  THEN  &lt;Process&gt;  </FORMAT>
+<FORMAT>IF  &lt;Expression&gt;  THEN  &lt;Process&gt;  ELSE &lt;Process&gt;</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>ELSE</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>ENDIF</FORMAT>
+<SAMPLE>IF M1&gt;10 THEN</SAMPLE>
+<SAMPLE>ELSE</SAMPLE>
+<SAMPLE>ENDIF</SAMPLE>
+<COMMENT>A process is selected and executed according to the results of an expression.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ENDIF</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>IF  &lt;Expression&gt;  THEN  &lt;Process&gt;  </FORMAT>
+<FORMAT>IF  &lt;Expression&gt;  THEN  &lt;Process&gt;  ELSE &lt;Process&gt;</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>ELSE</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>ENDIF</FORMAT>
+<SAMPLE>IF M1&gt;10 THEN</SAMPLE>
+<SAMPLE>ELSE</SAMPLE>
+<SAMPLE>ENDIF</SAMPLE>
+<COMMENT>A process is selected and executed according to the results of an expression.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>INPUT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>INPUT  #&lt;File No.&gt;, &lt;Input data name&gt;</FORMAT>
+<FORMAT>INPUT  #&lt;File No.&gt;, &lt;Input data name&gt;, &lt;Input data name&gt;...</FORMAT>
+<SAMPLE>INPUT #1, M1</SAMPLE>
+<SAMPLE>INPUT #1, M1, CABC$</SAMPLE>
+<SAMPLE>INPUT #1, M1, P1</SAMPLE>
+<COMMENT>Inputs data into a file (including communication lines).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>JOVRD</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>JOVRD  &lt;Designated override&gt;</FORMAT>
+<SAMPLE>JOVRD 50</SAMPLE>
+<COMMENT>Designates the override that is valid only during the robot&apos;s joint movements.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>JRC</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>JRC  &lt;[+]1/-1/0&gt;</FORMAT>
+<FORMAT>JRC  &lt;[+]1/-1/0&gt;, &lt;Axis No&gt;</FORMAT>
+<FORMAT>JRC  &lt;[+]&lt;Numeric Value&gt;/-&lt;Numeric Value&gt;/0&gt;</FORMAT>
+<FORMAT>JRC  &lt;[+]&lt;Numeric Value&gt;/-&lt;Numeric Value&gt;/0&gt;, &lt;Axis No&gt;</FORMAT>
+<SAMPLE>JRC 1</SAMPLE>
+<SAMPLE>JRC 1, 2</SAMPLE>
+<SAMPLE>JRC -2</SAMPLE>
+<SAMPLE>JRC -2, 1</SAMPLE>
+<COMMENT>This instruction rewrites the current coordinate values by adding/subtracting the value specified by a parameter to/from the current joint coordinate values of the specified axis.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>LOADSET</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>LOADSET  &lt;Hand condition No.&gt;, &lt;Workpiece condition No.&gt;</FORMAT>
+<SAMPLE>LOADSET 1, 2</SAMPLE>
+<COMMENT>This instruction specifies the condition of the hand/workpiece at execution of the OADL instruction.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MOV</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>MOV  &lt;Target Position&gt;</FORMAT>
+<FORMAT>MOV  &lt;Target Position&gt;, &lt;Close Distance&gt;</FORMAT>
+<FORMAT>MOV  &lt;Target Position&gt;, &lt;Close Distance&gt;  TYPE  &lt;Constants1&gt;, &lt;Constants1&gt;</FORMAT>
+<FORMAT>MOV  &lt;Target Position&gt;, &lt;Close Distance&gt;  TYPE  &lt;Constants1&gt;, &lt;Constants1&gt;, &lt;Appended conditions&gt;</FORMAT>
+<SAMPLE>MOV J1</SAMPLE>
+<SAMPLE>MOV P1, 50.0</SAMPLE>
+<SAMPLE>MOV P1, 50.0 TYPE 1, 0</SAMPLE>
+<SAMPLE>MOV P4, 100.0 WTH M_OUT(17)=1</SAMPLE>
+<COMMENT>Using joint interpolation operation, moves from the current position to the destination position.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TYPE</RSV_NAME>
+<CATEGORY>8</CATEGORY>
+<FORMAT>MOV  &lt;Target Position&gt;, &lt;Close Distance&gt;  TYPE  &lt;Constants1&gt;, &lt;Constants1&gt;</FORMAT>
+<FORMAT>MOV  &lt;Target Position&gt;, &lt;Close Distance&gt;  TYPE  &lt;Constants1&gt;, &lt;Constants1&gt;, &lt;Appended conditions&gt;</FORMAT>
+<SAMPLE>MOV P1 TYPE 0, 0</SAMPLE>
+<SAMPLE>MOV P1 TYPE 1, 0</SAMPLE>
+<SAMPLE>MOV P1 TYPE 0, 1</SAMPLE>
+<SAMPLE>MOV P1 TYPE 1, 1</SAMPLE>
+<SAMPLE>MOV P1 TYPE 0, 2</SAMPLE>
+<COMMENT>The movement type from current location to the movement purpose position is specified.</COMMENT>
+<COMMENT>&lt;Constants1&gt;:0/1 = shortcut/detour</COMMENT>
+<COMMENT>&lt;Constants2&gt;:0/1/2 = equivalent rotation/3-axis XYZ/singular point passage</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MVA</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>MVA  &lt;Target Position&gt;</FORMAT>
+<FORMAT>MVA  &lt;Target Position&gt;, &lt;Arch number&gt;</FORMAT>
+<SAMPLE>MVA P2, 1</SAMPLE>
+<COMMENT>This instruction moves the robot from the current position to the target position with an arch movement (arch interpolation).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MVC</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>MVC  &lt;Start point&gt;, &lt;Transit point 1&gt;, &lt;Transit point 2&gt;</FORMAT>
+<FORMAT>MVC  &lt;Start point&gt;, &lt;Transit point 1&gt;, &lt;Transit point 2&gt;  &lt;Additional condition&gt;]</FORMAT>
+<SAMPLE>MVC P1, P2, P3</SAMPLE>
+<SAMPLE>MVC P1, P2, P3 WTH M_OUT(17)=1</SAMPLE>
+<COMMENT>Carries out 3D circular interpolation in the order of start point, transit point 1, transit point 2 and start point.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MVR</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>MVR  &lt;Start Point&gt;, &lt;Transit Point&gt;, &lt;End Point&gt;</FORMAT>
+<FORMAT>MVR  &lt;Start Point&gt;, &lt;Transit Point&gt;, &lt;End Point&gt;  TYPE  &lt;Constants 1&gt;, &lt;Constants 2&gt;</FORMAT>
+<FORMAT>MVR  &lt;Start Point&gt;, &lt;Transit Point&gt;, &lt;End Point&gt;  TYPE  &lt;Constants 1&gt;, &lt;Constants 2&gt;  &lt;Appended Condition&gt;</FORMAT>
+<SAMPLE>MVR P1, P2, P3</SAMPLE>
+<SAMPLE>MVR P1, P2, P3 TYPE 0, 1</SAMPLE>
+<SAMPLE>MVR P1, P2, P3 TYPE 0, 1 WTH M_OUT(17)=1</SAMPLE>
+<COMMENT>Carries out 3-dimensional circular interpolation movement from the start point to the end point via transit points.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MVR2</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>MVR2  &lt;Start Point&gt;, &lt;End Point&gt;, &lt;Reference point&gt;</FORMAT>
+<FORMAT>MVR2  &lt;Start Point&gt;, &lt;End Point&gt;, &lt;Reference point&gt;  TYPE  &lt;Constants 1&gt;, &lt;Constants 2&gt;</FORMAT>
+<FORMAT>MVR2  &lt;Start Point&gt;, &lt;End Point&gt;, &lt;Reference point&gt;  TYPE  &lt;Constants 1&gt;, &lt;Constants 2&gt;  &lt;Appended Condition&gt;</FORMAT>
+<SAMPLE>MVR2 P1, P2, P3</SAMPLE>
+<SAMPLE>MVR2 P1, P2, P3 TYPE 0, 1</SAMPLE>
+<SAMPLE>MVR2 P1, P2, P3 TYPE 0, 1 WTH M_OUT(17)=1</SAMPLE>
+<COMMENT>Carries out 3-dimensional circular interpolation motion from the start point to the end point on the arc composed of the start point, end point, and reference points.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MVR3</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>MVR3  &lt;Start Point&gt;, &lt;End Point&gt;, &lt;Center Point&gt;</FORMAT>
+<FORMAT>MVR3  &lt;Start Point&gt;, &lt;End Point&gt;, &lt;Center Point&gt;  TYPE  &lt;Constants 1&gt;AC&lt;Constants 2&gt;]</FORMAT>
+<FORMAT>MVR3  &lt;Start Point&gt;, &lt;End Point&gt;, &lt;Center Point&gt;  TYPE  &lt;Constants 1&gt;AC&lt;Constants 2&gt;  &lt;Appended Condition&gt;</FORMAT>
+<SAMPLE>MVR3 P1, P2, P3</SAMPLE>
+<SAMPLE>MVR3 P1, P2, P3 TYPE 0, 1</SAMPLE>
+<SAMPLE>MVR3 P1, P2, P3 TYPE 0, 1 WTH M_OUT(17)=1</SAMPLE>
+<COMMENT>Carries out 3-dimensional circular interpolation movement from the start point to the end point on the arc composed of the center point, start point and end point.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MVS</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>MVS  &lt;Movement Target Position&gt;</FORMAT>
+<FORMAT>MVS  &lt;Movement Target Position&gt;, &lt;Close Distance&gt;</FORMAT>
+<FORMAT>MVS  &lt;Movement Target Position&gt;, &lt;Close Distance&gt;  TYPE  &lt;Constants1&gt;, &lt;Constants2&gt;</FORMAT>
+<FORMAT>MVS  &lt;Movement Target Position&gt;, &lt;Close Distance&gt;  TYPE  &lt;Constants1&gt;, &lt;Constants2&gt;  &lt;Appended Condition&gt;</FORMAT>
+<FORMAT>MVS , &lt;Separation Distance&gt;</FORMAT>
+<FORMAT>MVS , &lt;Separation Distance&gt;  TYPE  &lt;Constants1&gt;, &lt;Constants2&gt;</FORMAT>
+<FORMAT>MVS , &lt;Separation Distance&gt;  TYPE  &lt;Constants1&gt;, &lt;Constants2&gt;  &lt;Appended Condition&gt;</FORMAT>
+<SAMPLE>MVS P1</SAMPLE>
+<SAMPLE>MVS P1, 50.0</SAMPLE>
+<SAMPLE>MVS P1, 50.0 TYPE 1, 0</SAMPLE>
+<SAMPLE>MVS P1, 50.0 TYPE 1, 0 WTH M_OUT(17)=1</SAMPLE>
+<SAMPLE>MVS ,100</SAMPLE>
+<SAMPLE>MVS ,100 TYPE 1, 0</SAMPLE>
+<SAMPLE>MVS ,100 TYPE 1, 0 WTH M_OUT(17)=1</SAMPLE>
+<COMMENT>Carries out linear interpolation movement from the current position to the movement target position.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>MXT</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>MXT &lt;File No.&gt;, &lt;Reply position&gt;</FORMAT>
+<FORMAT>MXT &lt;File No.&gt;, &lt;Reply position&gt;, &lt;Filter time constant&gt;</FORMAT>
+<SAMPLE>MXT 1,1</SAMPLE>
+<SAMPLE>MXT 1,1,50</SAMPLE>
+<COMMENT>The absolute position data is retrieved from an external source at each controller control time,and the robot is directly moved.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVCLOSE</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVCLOSE</FORMAT>
+<FORMAT>NVCLOSE #&lt;Vision sensor number&gt;</FORMAT>
+<FORMAT>NVCLOSE #&lt;Vision sensor number&gt;, [#&lt;Vision sensor number&gt;[,#&lt;Vision sensor number&gt;]]</FORMAT>
+<SAMPLE>NVCLOSE</SAMPLE>
+<SAMPLE>NVCLOSE #1</SAMPLE>
+<SAMPLE>NVCLOSE #1,#3</SAMPLE>
+<COMMENT>Cuts the line with the specified vision sensor.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVIN</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVIN #&lt;Vision sensor number&gt;, [&lt;Vision program name&gt;], &lt;Recognition count cell&gt;, &lt;Start cell&gt;, &lt;End cell&gt;, &lt;Type&gt;, [&lt;Timeout&gt;]</FORMAT>
+<FORMAT>NVIN #&lt;Vision sensor number&gt;, &quot;&quot;, &lt;Recognition count cell&gt;, &lt;Start cell&gt;, &lt;End cell&gt;, &lt;Type&gt;, [&lt;Timeout&gt;]</FORMAT>
+<FORMAT>NVIN #&lt;Vision sensor number&gt;, [&lt;Vision program name&gt;], &lt;Recognition count cell&gt;, &lt;Start cell&gt;, &lt;End cell&gt;, &lt;Type&gt;</FORMAT>
+<FORMAT>NVIN #&lt;Vision sensor number&gt;, &quot;&quot;, &lt;Recognition count cell&gt;, &lt;Start cell&gt;, &lt;End cell&gt;, &lt;Type&gt;</FORMAT>
+<SAMPLE>NVIN #1,&quot;TEST&quot;,&quot;E76&quot;,&quot;J81&quot;,&quot;L84&quot;,0,10</SAMPLE>
+<SAMPLE>NVIN #1,&quot;&quot;,&quot;E76&quot;,&quot;J81&quot;,&quot;L84&quot;,0,10</SAMPLE>
+<SAMPLE>NVIN #1,&quot;TEST&quot;,&quot;E76&quot;,&quot;J81&quot;,&quot;L84&quot;,0</SAMPLE>
+<SAMPLE>NVIN #1,&quot;&quot;,&quot;E76&quot;,&quot;J81&quot;,&quot;L84&quot;,0</SAMPLE>
+<COMMENT>Receives the results of the recognition by the vision sensor.</COMMENT>
+<COMMENT>The data received from the vision sensor is stored in the robot controller robot status variables.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVLOAD</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVLOAD #&lt;Vision sensor number&gt;, &lt;Vision program name&gt;</FORMAT>
+<SAMPLE>NVLOAD #1,&quot;TEST&quot;</SAMPLE>
+<COMMENT>Loads the specified vision program into the vision sensor.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVOPEN</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVOPEN &quot;&lt;COM number&gt;&quot; AS #&lt;Vision sensor number&gt;</FORMAT>
+<SAMPLE>NVOPEN &quot;COM2:&quot; AS #1</SAMPLE>
+<COMMENT>Connects with the specified vision sensor and logs on to that vision sensor.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVPST</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVPST #&lt;Vision sensor number&gt;, &lt;Vision program name&gt;, &lt;Recognition count cell&gt;, &lt;Start cell&gt;, &lt;End cell&gt;, &lt;Type&gt;, [&lt;Timeout&gt;]</FORMAT>
+<FORMAT>NVPST #&lt;Vision sensor number&gt;, &lt;Vision program name&gt;, &lt;Recognition count cell&gt;, &lt;Start cell&gt;, &lt;End cell&gt;, &lt;Type&gt;</FORMAT>
+<SAMPLE>NVPST #1,&quot;TEST&quot;,&quot;E76&quot;,&quot;J81&quot;,&quot;L84&quot;,0,10</SAMPLE>
+<SAMPLE>NVPST #1,&quot;TEST&quot;,&quot;E76&quot;,&quot;J81&quot;,&quot;L84&quot;,0</SAMPLE>
+<COMMENT>Starts the specified vision program and obtains the results.</COMMENT>
+<COMMENT>The data received from the vision sensor is stored in the robot controller robot status variables.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVRUN</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVRUN #&lt;Vision sensor number&gt;, &lt;Vision program name&gt;</FORMAT>
+<SAMPLE>NVRUN #1,&quot;TEST&quot;</SAMPLE>
+<COMMENT>Starts the specified vision program.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>NVTRG</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>NVTRG #&lt;Vision sensor number&gt;, &lt;Delay time&gt;, &lt;encoder 1 value read-out variable&gt;</FORMAT>
+<FORMAT>NVTRG #&lt;Vision sensor number&gt;, &lt;Delay time&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;</FORMAT>
+<FORMAT>NVTRG #&lt;Vision sensor number&gt;, &lt;Delay time&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;, &lt;encoder 3&gt;</FORMAT>
+<FORMAT>NVTRG #&lt;Vision sensor number&gt;, &lt;Delay time&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;, &lt;encoder 3&gt;, &lt;encoder 4&gt;</FORMAT>
+<FORMAT>NVTRG #&lt;Vision sensor number&gt;, &lt;Delay time&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;, &lt;encoder 3&gt;, &lt;encoder 4&gt;, &lt;encoder 5&gt;</FORMAT>
+<FORMAT>NVTRG #&lt;Vision sensor number&gt;, &lt;Delay time&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;, &lt;encoder 3&gt;, &lt;encoder 4&gt;, &lt;encoder 5&gt;, &lt;encoder 6&gt;</FORMAT>
+<FORMAT>NVTRG #&lt;Vision sensor number&gt;, &lt;Delay time&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;, &lt;encoder 3&gt;, &lt;encoder 4&gt;, &lt;encoder 5&gt;, &lt;encoder 6&gt;, &lt;encoder 7&gt;</FORMAT>
+<FORMAT>NVTRG #&lt;Vision sensor number&gt;, &lt;Delay time&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;, &lt;encoder 3&gt;, &lt;encoder 4&gt;, &lt;encoder 5&gt;, &lt;encoder 6&gt;, &lt;encoder 7&gt;, &lt;encoder 8&gt;</FORMAT>
+<SAMPLE>NVTRG #1,0,ME1#</SAMPLE>
+<SAMPLE>NVTRG #1,0,ME1#,ME2#</SAMPLE>
+<SAMPLE>NVTRG #1,0,ME1#,ME2#,ME3#</SAMPLE>
+<SAMPLE>NVTRG #1,0,ME1#,ME2#,ME3#,ME4#</SAMPLE>
+<SAMPLE>NVTRG #1,0,ME1#,ME2#,ME3#,ME4#,ME5#</SAMPLE>
+<SAMPLE>NVTRG #1,0,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#</SAMPLE>
+<SAMPLE>NVTRG #1,0,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#,ME7#</SAMPLE>
+<SAMPLE>NVTRG #1,0,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#,ME7#,ME8#</SAMPLE>
+<COMMENT>Requests the specified vision program to capture an image and the value of an external encoder is read.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>OADL OFF</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>OADL  &lt;ON/OFF&gt;</FORMAT>
+<SAMPLE>OADL OFF</SAMPLE>
+<COMMENT>Automatically sets the optimum acceleration/deceleration according to the robot hand&apos;s load state (Optimum acceleration/deceleration control).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>OADL ON</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>OADL  &lt;ON/OFF&gt;</FORMAT>
+<SAMPLE>OADL ON</SAMPLE>
+<COMMENT>Automatically sets the optimum acceleration/deceleration according to the robot hand&apos;s load state (Optimum acceleration/deceleration control).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>OFF</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>&lt;Command&gt; OFF</FORMAT>
+<SAMPLE>OFF</SAMPLE>
+<COMMENT>Disable the function. </COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ON</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>&lt;Command&gt; ON</FORMAT>
+<SAMPLE>ON</SAMPLE>
+<COMMENT>Enable the function. </COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ON COM GOSUB</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>ON  COM  GOSUB  &lt;Call Destination&gt;</FORMAT>
+<FORMAT>ON  COM(&lt;File No.&gt;)  GOSUB &lt;Call Destination&gt;</FORMAT>
+<SAMPLE>ON COM GOSUB *RECV</SAMPLE>
+<SAMPLE>ON COM(1) GOSUB *RECV</SAMPLE>
+<COMMENT>Defines the starting line of a branching subroutine when an interrupt is generated from a designated communication line.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ON GOSUB</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>ON  &lt;Terminology&gt;  GOSUB  &lt;Expression&gt;</FORMAT>
+<FORMAT>ON  &lt;Terminology&gt;  GOSUB  &lt;Expression&gt;, &lt;Call Destination&gt;...</FORMAT>
+<SAMPLE>ON M1 GOSUB 1000</SAMPLE>
+<SAMPLE>ON M1 GOSUB 1000, *LSUB</SAMPLE>
+<COMMENT>Calls up the subroutine at the line No. or label corresponding to the value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>ON GOTO</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>ON  &lt;Expression&gt;  GOTO  &lt;Branch Destination&gt;</FORMAT>
+<FORMAT>ON  &lt;Expression&gt;  GOTO  &lt;Branch Destination&gt;, &lt;Branch Destination&gt;...</FORMAT>
+<SAMPLE>ON M1 GOTO 1000</SAMPLE>
+<SAMPLE>ON M1 GOTO 1000, *LJMP</SAMPLE>
+<COMMENT>Branches to the line with the line No. or label that corresponds to the designated value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>OPEN</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>OPEN  &quot;&lt;File Descriptor&gt;&quot;  AS  [#]&lt;File No.&gt;</FORMAT>
+<FORMAT>OPEN  &quot;&lt;File Descriptor&gt;&quot;  FOR  &lt;Mode&gt;  AS [#]&lt;File No.&gt;</FORMAT>
+<SAMPLE>OPEN &quot;COM1:&quot; AS #1</SAMPLE>
+<SAMPLE>OPEN &quot;temp.txt&quot; FOR APPEND AS #1</SAMPLE>
+<SAMPLE>OPEN &quot;temp.txt&quot; FOR INPUT AS #1</SAMPLE>
+<SAMPLE>OPEN &quot;temp.txt&quot; FOR OUTPUT AS #1</SAMPLE>
+<COMMENT>Open the file or communication lines.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>OVRD</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>OVRD  &lt;Override&gt;</FORMAT>
+<SAMPLE>OVRD 50</SAMPLE>
+<COMMENT>This instruction specifies the speed of the robot movement as a value in the range from 1 to 100%.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>PLT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>PLT  &lt;Pallet No.&gt;, &lt;Grid No.&gt;</FORMAT>
+<SAMPLE>PLACE = PLT 1, M1</SAMPLE>
+<COMMENT>Calculates the position of grid in the pallet.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>PREC OFF</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>PREC  &lt;ON/OFF&gt;</FORMAT>
+<SAMPLE>PREC OFF</SAMPLE>
+<COMMENT>This instruction is used to improve the motion path tracking.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>PREC ON</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>PREC  &lt;ON/OFF&gt;</FORMAT>
+<SAMPLE>PREC ON</SAMPLE>
+<COMMENT>This instruction is used to improve the motion path tracking.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>PRINT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>PRINT  #&lt;File No.&gt;  , &lt;Expression&gt;</FORMAT>
+<FORMAT>PRINT  #&lt;File No.&gt;  , &lt;Expression&gt;, &lt;Expression&gt;...</FORMAT>
+<FORMAT>PRINT  #&lt;File No.&gt;  , &lt;Expression&gt;; &lt;Expression&gt;...</FORMAT>
+<SAMPLE>PRINT #1, &quot;***PRINT TEST***&quot;</SAMPLE>
+<SAMPLE>PRINT #1, &quot;MDATA=&quot;, MDATA</SAMPLE>
+<SAMPLE>PRINT #1, &quot;***TEST &quot;; &quot;END***&quot;</SAMPLE>
+<COMMENT>Outputs data into a file (including communication lines).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>PRIORITY</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>PRIORITY  &lt;Number of executed lines&gt;</FORMAT>
+<FORMAT>PRIORITY  &lt;Number of executed lines&gt;, &lt;Slot number&gt;</FORMAT>
+<SAMPLE>PRIORITY 3</SAMPLE>
+<SAMPLE>PRIORITY 4, 2</SAMPLE>
+<COMMENT>This instruction specifies the priority (number of lines executed in priority) when programs are executed in multitask operation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>RELM</RSV_NAME>
+<CATEGORY>3</CATEGORY>
+<FORMAT>RELM</FORMAT>
+<SAMPLE>RELM</SAMPLE>
+<COMMENT>It is used to release the mechanism obtained by the GETM instruction.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>REM</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>REM  </FORMAT>
+<FORMAT>REM  &lt;Comment&gt;</FORMAT>
+<FORMAT>&apos;  </FORMAT>
+<FORMAT>&apos;    &lt;Comment&gt;</FORMAT>
+<SAMPLE>REM</SAMPLE>
+<SAMPLE>REM ***MAIN PROGRAM***</SAMPLE>
+<SAMPLE>&apos;</SAMPLE>
+<SAMPLE>&apos; ***MAIN PROGRAM***</SAMPLE>
+<COMMENT>Uses the following character strings as comments.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>RESET ERR</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>RESET ERR</FORMAT>
+<SAMPLE>IF M_ERR=1 THEN RESET ERR</SAMPLE>
+<COMMENT>This instruction resets an error generated in the robot controller.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>RETURN</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>RETURN</FORMAT>
+<FORMAT>RETURN &lt;Return Designation No.&gt;</FORMAT>
+<SAMPLE>RETURN</SAMPLE>
+<SAMPLE>RETURN 0</SAMPLE>
+<SAMPLE>RETURN 1</SAMPLE>
+<COMMENT>When returning from a normal subroutine returns to the next line after the GOSUB.</COMMENT>
+<COMMENT>When returning from an interrupt processing subroutine, returns either to the line where the interrupt was generated, or to the next line.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SELECT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>SELECT  &lt;Condition&gt;</FORMAT>
+<FORMAT>CASE  &lt;Expression&gt;</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>..</FORMAT>
+<FORMAT>DEFAULT</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>END  SELECT</FORMAT>
+<SAMPLE>SELECT MCNT</SAMPLE>
+<SAMPLE>CASE IS &lt;= 10</SAMPLE>
+<SAMPLE>BREAK</SAMPLE>
+<SAMPLE>CASE 11</SAMPLE>
+<SAMPLE>CASE 12 TO 18</SAMPLE>
+<SAMPLE>DEFAULT</SAMPLE>
+<SAMPLE>END SELECT</SAMPLE>
+<COMMENT>Executes one of multiple statement blocks according to the condition expression value.</COMMENT>
+<END_NAME>END SELECT</END_NAME>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>CASE</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>SELECT  &lt;Condition&gt;</FORMAT>
+<FORMAT>CASE  &lt;Expression&gt;</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>..</FORMAT>
+<FORMAT>DEFAULT</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>END  SELECT</FORMAT>
+<SAMPLE>SELECT MCNT</SAMPLE>
+<SAMPLE>CASE IS &lt;= 10</SAMPLE>
+<SAMPLE>BREAK</SAMPLE>
+<SAMPLE>CASE 11</SAMPLE>
+<SAMPLE>CASE 12 TO 18</SAMPLE>
+<SAMPLE>DEFAULT</SAMPLE>
+<SAMPLE>END SELECT</SAMPLE>
+<COMMENT>Executes one of multiple statement blocks according to the condition expression value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>IS</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>SELECT  &lt;Condition&gt;</FORMAT>
+<FORMAT>CASE  &lt;Expression&gt;</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>..</FORMAT>
+<FORMAT>DEFAULT</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>END  SELECT</FORMAT>
+<SAMPLE>SELECT MCNT</SAMPLE>
+<SAMPLE>CASE IS &lt;= 10</SAMPLE>
+<SAMPLE>BREAK</SAMPLE>
+<SAMPLE>CASE 11</SAMPLE>
+<SAMPLE>CASE 12 TO 18</SAMPLE>
+<SAMPLE>DEFAULT</SAMPLE>
+<SAMPLE>END SELECT</SAMPLE>
+<COMMENT>Executes one of multiple statement blocks according to the condition expression value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TO</RSV_NAME>
+<CATEGORY>8</CATEGORY>
+<FORMAT>SELECT  &lt;Condition&gt;</FORMAT>
+<FORMAT>CASE  &lt;Numerical value&gt; TO &lt;Numerical value&gt;</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>..</FORMAT>
+<FORMAT>DEFAULT</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>END  SELECT</FORMAT>
+<SAMPLE>SELECT MCNT</SAMPLE>
+<SAMPLE>CASE IS &lt;= 10</SAMPLE>
+<SAMPLE>BREAK</SAMPLE>
+<SAMPLE>CASE 11</SAMPLE>
+<SAMPLE>CASE 12 TO 18</SAMPLE>
+<SAMPLE>DEFAULT</SAMPLE>
+<SAMPLE>END SELECT</SAMPLE>
+<COMMENT>Executes one of multiple statement blocks according to the condition expression value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>BREAK</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>SELECT  &lt;Condition&gt;</FORMAT>
+<FORMAT>CASE  &lt;Expression&gt;</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>..</FORMAT>
+<FORMAT>DEFAULT</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>END  SELECT</FORMAT>
+<SAMPLE>SELECT MCNT</SAMPLE>
+<SAMPLE>CASE IS &lt;= 10</SAMPLE>
+<SAMPLE>BREAK</SAMPLE>
+<SAMPLE>CASE 11</SAMPLE>
+<SAMPLE>CASE 12 TO 18</SAMPLE>
+<SAMPLE>DEFAULT</SAMPLE>
+<SAMPLE>END SELECT</SAMPLE>
+<COMMENT>Executes one of multiple statement blocks according to the condition expression value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>DEFAULT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>SELECT  &lt;Condition&gt;</FORMAT>
+<FORMAT>CASE  &lt;Expression&gt;</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>..</FORMAT>
+<FORMAT>DEFAULT</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>END  SELECT</FORMAT>
+<SAMPLE>SELECT MCNT</SAMPLE>
+<SAMPLE>CASE IS &lt;= 10</SAMPLE>
+<SAMPLE>BREAK</SAMPLE>
+<SAMPLE>CASE 11</SAMPLE>
+<SAMPLE>CASE 12 TO 18</SAMPLE>
+<SAMPLE>DEFAULT</SAMPLE>
+<SAMPLE>END SELECT</SAMPLE>
+<COMMENT>Executes one of multiple statement blocks according to the condition expression value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>END SELECT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>SELECT  &lt;Condition&gt;</FORMAT>
+<FORMAT>CASE  &lt;Expression&gt;</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>..</FORMAT>
+<FORMAT>DEFAULT</FORMAT>
+<FORMAT>[&lt;Process&gt;]</FORMAT>
+<FORMAT>BREAK</FORMAT>
+<FORMAT>END  SELECT</FORMAT>
+<SAMPLE>SELECT MCNT</SAMPLE>
+<SAMPLE>CASE IS &lt;= 10</SAMPLE>
+<SAMPLE>BREAK</SAMPLE>
+<SAMPLE>CASE 11</SAMPLE>
+<SAMPLE>CASE 12 TO 18</SAMPLE>
+<SAMPLE>DEFAULT</SAMPLE>
+<SAMPLE>END SELECT</SAMPLE>
+<COMMENT>Executes one of multiple statement blocks according to the condition expression value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SERVO ON</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>SERVO  &lt;ON/OFF&gt;</FORMAT>
+<SAMPLE>SERVO ON</SAMPLE>
+<COMMENT>Controls the ON and OFF of the servo motor power.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SERVO OFF</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>SERVO  &lt;ON/OFF&gt;</FORMAT>
+<SAMPLE>SERVO OFF</SAMPLE>
+<COMMENT>Controls the ON and OFF of the servo motor power.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SKIP</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>SKIP</FORMAT>
+<SAMPLE>MOV P1 WTHIF M_IN(17)=1, SKIP</SAMPLE>
+<COMMENT>Transfers control of the program to the next line.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SPD</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>SPD  &lt;Designated Speed&gt;</FORMAT>
+<FORMAT>SPD  M_NSPD (Optimum speed control mode)</FORMAT>
+<SAMPLE>SPD 100</SAMPLE>
+<SAMPLE>SPD M_NSPD</SAMPLE>
+<COMMENT>Designates the speed for the robot&apos;s linear and circular movements.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SPDOPT OFF</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>SPDOPT &lt;ON/OFF&gt;</FORMAT>
+<SAMPLE>SPDOPT OFF</SAMPLE>
+<COMMENT>Designates the speed for the robot&apos;s linear and circular movements.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>SPDOPT ON</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>SPDOPT &lt;ON/OFF&gt;</FORMAT>
+<SAMPLE>SPDOPT ON</SAMPLE>
+<COMMENT>Designates the speed for the robot&apos;s linear and circular movements.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TITLE</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TITLE  &quot;&lt;Character String&gt;&quot;</FORMAT>
+<SAMPLE>TITLE &quot;ROBOT Loader Program&quot;</SAMPLE>
+<COMMENT>Appends the title to the program.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TOOL</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>TOOL  &lt;Tool Conversion Data&gt;</FORMAT>
+<SAMPLE>TOOL (100, 0, 100, 0, 0, 0)</SAMPLE>
+<COMMENT>Designates the tool conversion data.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TORQ</RSV_NAME>
+<CATEGORY>0</CATEGORY>
+<FORMAT>TORQ  &lt;Axis No.&gt;, &lt;Torque Limitation Rate&gt;</FORMAT>
+<SAMPLE>TORQ 3, 10</SAMPLE>
+<COMMENT>Designates the torque limit for each axis.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TRBASE</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TRBASE &lt;Reference position data&gt;</FORMAT>
+<FORMAT>TRBASE &lt;Reference position data&gt;, &lt;Encoder number&gt;</FORMAT>
+<SAMPLE>TRBASE P0</SAMPLE>
+<SAMPLE>TRBASE P0,MENC#</SAMPLE>
+<COMMENT>Specify the workpiece coordinate system origin and the logic number of an external encoder used in tracking operation.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TRCLR</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TRCLR</FORMAT>
+<FORMAT>TRCLR [&lt;Buffer number&gt;]</FORMAT>
+<SAMPLE>TRCLR</SAMPLE>
+<SAMPLE>TRCLR 1</SAMPLE>
+<COMMENT>Clears the tracking data buffer.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TRK OFF</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TRK ON, &lt;Measurement position data&gt;, &lt;Encoder data&gt;</FORMAT>
+<FORMAT>TRK ON, &lt;Measurement position data&gt;, &lt;Encoder data&gt;, &lt;Reference position data&gt;</FORMAT>
+<FORMAT>TRK ON, &lt;Measurement position data&gt;, &lt;Encoder data&gt;, &lt;Reference position data&gt;, &lt;Encoder number&gt;</FORMAT>
+<FORMAT>TRK OFF</FORMAT>
+<SAMPLE>TRK OFF</SAMPLE>
+<COMMENT>The robot works while following to the movement of the conveyor.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TRK ON</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TRK ON, &lt;Measurement position data&gt;, &lt;Encoder data&gt;</FORMAT>
+<FORMAT>TRK ON, &lt;Measurement position data&gt;, &lt;Encoder data&gt;, &lt;Reference position data&gt;</FORMAT>
+<FORMAT>TRK ON, &lt;Measurement position data&gt;, &lt;Encoder data&gt;, &lt;Reference position data&gt;, &lt;Encoder number&gt;</FORMAT>
+<FORMAT>TRK OFF</FORMAT>
+<SAMPLE>TRK ON,P1,MENC#</SAMPLE>
+<SAMPLE>TRK ON,P1,MENC#,P0</SAMPLE>
+<SAMPLE>TRK ON,P1,MENC#,P0,MENCNO%</SAMPLE>
+<COMMENT>The robot works while following to the movement of the conveyer.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TROUT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TROUT &lt;Output number&gt;, &lt;encoder 1 value read-out variable&gt;</FORMAT>
+<FORMAT>TROUT &lt;Output number&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;</FORMAT>
+<FORMAT>TROUT &lt;Output number&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;, &lt;encoder 3&gt;</FORMAT>
+<FORMAT>TROUT &lt;Output number&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;, &lt;encoder 3&gt;, &lt;encoder 4&gt;</FORMAT>
+<FORMAT>TROUT &lt;Output number&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;, &lt;encoder 3&gt;, &lt;encoder 4&gt;, &lt;encoder 5&gt;</FORMAT>
+<FORMAT>TROUT &lt;Output number&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;, &lt;encoder 3&gt;, &lt;encoder 4&gt;, &lt;encoder 5&gt;, &lt;encoder 6&gt;</FORMAT>
+<FORMAT>TROUT &lt;Output number&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;, &lt;encoder 3&gt;, &lt;encoder 4&gt;, &lt;encoder 5&gt;, &lt;encoder 6&gt;, &lt;encoder 7&gt;</FORMAT>
+<FORMAT>TROUT &lt;Output number&gt;, &lt;encoder 1 value read-out variable&gt;, &lt;encoder 2&gt;, &lt;encoder 3&gt;, &lt;encoder 4&gt;, &lt;encoder 5&gt;, &lt;encoder 6&gt;, &lt;encoder 7&gt;, &lt;encoder 8&gt;</FORMAT>
+<SAMPLE>TROUT 11,ME1#</SAMPLE>
+<SAMPLE>TROUT 20,ME1#,ME2#</SAMPLE>
+<SAMPLE>TROUT 25,ME1#,ME2#,ME3#</SAMPLE>
+<SAMPLE>TROUT 6000,ME1#,ME2#,ME3#,ME4#</SAMPLE>
+<SAMPLE>TROUT 8,ME1#,ME2#,ME3#,ME4#,ME5#</SAMPLE>
+<SAMPLE>TROUT 15,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#</SAMPLE>
+<SAMPLE>TROUT 23,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#,ME7#</SAMPLE>
+<SAMPLE>TROUT 31,ME1#,ME2#,ME3#,ME4#,ME5#,ME6#,ME7#,ME8#</SAMPLE>
+<COMMENT>The specified general-purpose output signal is turned on and the value of an external encoder is read.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TRRD</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TRRD &lt;Position data&gt;, &lt;Encoder data&gt;</FORMAT>
+<FORMAT>TRRD &lt;Position data&gt;, &lt;Encoder data&gt;, &lt;Model number&gt;</FORMAT>
+<FORMAT>TRRD &lt;Position data&gt;, &lt;Encoder data&gt;, &lt;Model number&gt;, &lt;Buffer number&gt;</FORMAT>
+<FORMAT>TRRD &lt;Position data&gt;, &lt;Encoder data&gt;, &lt;Model number&gt;, &lt;Buffer number&gt;, &lt;Encoder number&gt;</FORMAT>
+<SAMPLE>TRRD P1,MENC#</SAMPLE>
+<SAMPLE>TRRD P1,MENC#,MK%</SAMPLE>
+<SAMPLE>TRRD P1,MENC#,MK%,1</SAMPLE>
+<SAMPLE>TRRD P1,MENC#,MK%,1,MENCNO%</SAMPLE>
+<COMMENT>Read position data for tracking operation, encoder data and so on from the data buffer.</COMMENT>
+<COMMENT>After that, the value is written in the specified variable.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>TRWRT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>TRWRT &lt;Position data&gt;, &lt;Encoder data&gt;</FORMAT>
+<FORMAT>TRWRT &lt;Position data&gt;, &lt;Encoder data&gt;, &lt;Model number&gt;</FORMAT>
+<FORMAT>TRWRT &lt;Position data&gt;, &lt;Encoder data&gt;, &lt;Model number&gt;, &lt;Buffer number&gt;</FORMAT>
+<FORMAT>TRWRT &lt;Position data&gt;, &lt;Encoder data&gt;, &lt;Model number&gt;, &lt;Buffer number&gt;, &lt;Encoder number&gt;</FORMAT>
+<SAMPLE>TRWRT P1,MENC#</SAMPLE>
+<SAMPLE>TRWRT P1,MENC#,MK%</SAMPLE>
+<SAMPLE>TRWRT P1,MENC#,MK%,1</SAMPLE>
+<SAMPLE>TRWRT P1,MENC#,MK%,1,MENCNO%</SAMPLE>
+<COMMENT>Write position data for tracking operation, encoder data and so on in the data buffer.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>WAIT</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>WAIT  &lt;Numeric variable&gt; = &lt;Numeric constant&gt;</FORMAT>
+<SAMPLE>WAIT M_IN(1)=1</SAMPLE>
+<COMMENT>Waits for the variable to reach the designated value.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>WHILE</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>WHILE  &lt;Loop Condition&gt;</FORMAT>
+<FORMAT>..</FORMAT>
+<FORMAT>WEND</FORMAT>
+<SAMPLE>WHILE M1&gt;=-5</SAMPLE>
+<SAMPLE>  M1=-(M1+1)</SAMPLE>
+<SAMPLE>WEND</SAMPLE>
+<COMMENT>The program between the WHILE statement and WEND statement is repeated until the loop conditions are satisfied.</COMMENT>
+<END_NAME>WEND</END_NAME>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>WEND</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>WHILE  &lt;Loop Condition&gt;</FORMAT>
+<FORMAT>..</FORMAT>
+<FORMAT>WEND</FORMAT>
+<SAMPLE>WHILE M1&gt;=-5</SAMPLE>
+<SAMPLE>  M1=-(M1+1)</SAMPLE>
+<SAMPLE>WEND</SAMPLE>
+<COMMENT>The program between the WHILE statement and WEND statement is repeated until the loop conditions are satisfied.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>WTH</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>WTH  &lt;Process&gt;</FORMAT>
+<SAMPLE>MOV P1 WTH M_OUT(17)=1 DLY 2</SAMPLE>
+<COMMENT>A process is added to the interpolation motion.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>WTHIF</RSV_NAME>
+<CATEGORY>1</CATEGORY>
+<FORMAT>WTHIF  &lt;Additional Condition&gt;, &lt;Process&gt;</FORMAT>
+<SAMPLE>MOV P1 WTHIF M_IN(17)=1, HLT</SAMPLE>
+<COMMENT>A process is conditionally added to the interpolation motion command.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>XCLR</RSV_NAME>
+<CATEGORY>4</CATEGORY>
+<FORMAT>XCLR  &lt;Slot No.&gt;</FORMAT>
+<SAMPLE>XCLR 2</SAMPLE>
+<COMMENT>This instruction cancels the program selection status of the specified task slot from within a program.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>XLOAD</RSV_NAME>
+<CATEGORY>4</CATEGORY>
+<FORMAT>XLOAD  &lt;Slot No.&gt;, &lt;Program Name&gt;</FORMAT>
+<SAMPLE>XLOAD 2, &quot;10&quot;</SAMPLE>
+<COMMENT>This instruction commands the specified program to be loaded into the specified task slot from within a program.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>XRST</RSV_NAME>
+<CATEGORY>4</CATEGORY>
+<FORMAT>XRST  &lt;Slot No.&gt;</FORMAT>
+<SAMPLE>XRST 2</SAMPLE>
+<COMMENT>This instruction returns the program control to the first line if the program of the specified task slot is paused by a command within the program (program reset).</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>XRUN</RSV_NAME>
+<CATEGORY>4</CATEGORY>
+<FORMAT>XRUN  &lt;Slot No.&gt;</FORMAT>
+<FORMAT>XRUN  &lt;Slot No.&gt;, &quot;&lt;Program Name&gt;&quot;</FORMAT>
+<FORMAT>XRUN  &lt;Slot No.&gt;, &quot;&lt;Program Name&gt;&quot;, &lt;Operation Mode&gt;</FORMAT>
+<SAMPLE>XRUN 2</SAMPLE>
+<SAMPLE>XRUN 2, &quot;1&quot;</SAMPLE>
+<SAMPLE>XRUN 3, &quot;2&quot;, 1</SAMPLE>
+<COMMENT>This instruction executes concurrently the specified programs from within a program.</COMMENT>
+</TEMPLATE>
+<TEMPLATE><RSV_NAME>XSTP</RSV_NAME>
+<CATEGORY>4</CATEGORY>
+<FORMAT>XSTP  &lt;Slot No.&gt;</FORMAT>
+<SAMPLE>XSTP 2</SAMPLE>
+<COMMENT>This instruction pauses the execution of the program in the specified task slot from within a program.</COMMENT>
+</TEMPLATE>
+</COMMAND>

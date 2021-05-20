@@ -1,0 +1,31 @@
+2021:05:13 20:52:27	:Syntax check Error
+	:Program	:PROGRAM(Command:6)	:RC1	:Robot	:60 HCLOSE	:Syntax error
+2021:05:13 20:53:18	:Syntax check Error
+	:Program	:PROGRAM(Command:6)	:RC1	:Robot	:60 HCLOSE RC1_Hand_open	:Too longvariable name
+2021:05:13 21:10:18	:Syntax check Error
+	:Program	:PROGRAM(Command:6)	:RC1	:Robot	:60 HCLOSE [0]	:Syntax error
+	:Program	:PROGRAM(Command:9)	:RC1	:Robot	:90 HOPEN [0]	:Syntax error
+2021:05:13 22:10:36	:Syntax check Error
+	:Program	:PROGRAM(Command:12)	:RC1	:Robot	:120 SGN 100	:Syntax error
+2021:05:13 22:11:05	:Syntax check Error
+	:Program	:PROGRAM(Command:12)	:RC1	:Robot	:120 1=SGN(900)	:Syntax error
+2021:05:13 22:57:00	:Syntax check Error
+	:Program	:PROGRAM(Command:5)	:RC1	:Robot	:50 MVS P3 WITH M_OUT(900)=1	:Syntax error
+2021:05:13 22:57:40	:Syntax check Error
+	:Program	:PROGRAM(Command:5)	:RC1	:Robot	:50 MVS P3 WITH M_OUT(909)=1	:Syntax error
+2021:05:13 22:58:17	:Syntax check Error
+	:Program	:PROGRAM(Command:5)	:RC1	:Robot	:50 MVS P3 WITH M_OUT(17)=1	:Syntax error
+2021:05:13 23:05:13	:Syntax check Error
+	:Program	:PROGRAM(Command:6)	:RC1	:Robot	:60 HCLOSE 1 WTH M_OUT(900)=0  	:Syntax error
+2021:05:13 23:05:24	:Syntax check Error
+	:Program	:PROGRAM(Command:6)	:RC1	:Robot	:60 HCLOSE 1 WTH M_OUT(901)=1  	:Syntax error
+2021:05:13 23:07:30	:Syntax check Error
+	:Program	:PROGRAM(Command:7)	:RC1	:Robot	:70 MVS P4 WTH M_OUT(900)=0 WTH M_OUT(901)=0 	:Syntax error
+2021:05:13 23:43:13	:Line# overlapped Error
+	:Program	:PROGRAM(Command:14)	:RC1	:Robot	:50 MVS P2	:The line# is overlapped.
+2021:05:13 23:43:32	:Line# overlapped Error
+	:Program	:PROGRAM(Command:14)	:RC1	:Robot	:50 MVS P2	:The line# is overlapped.
+2021:05:13 23:45:43	:Line# overlapped Error
+	:Program	:PROGRAM(Command:9)	:RC1	:Robot	:'BOX 1	:There is not line#.
+2021:05:13 23:45:44	:Syntax check Error
+	:Program	:PROGRAM(Command:9)	:RC1	:Robot	:0 'BOX 1	:Line No exceeds 32767
